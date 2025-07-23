@@ -61,22 +61,10 @@ class EnhancedDependencyAnalyzer:
 
     def analyze_project(self, root_path: str = ".") -> Dict[str, Any]:
         """Analyze entire project including previously excluded directories."""
-        # Auto-detect if we're running from within a dependency_graph folder
-        current_dir = Path.cwd()
-        if (
-            current_dir.name == "dependency_graph"
-            or (current_dir / "graph_modules").exists()
-        ):
-            # We're in the dependency_graph folder, so analyze the parent directory
-            root_path = ".."
-            print(
-                "🔍 Detected execution from dependency_graph folder - analyzing parent directory..."
-            )
-        else:
-            print("🔍 Enhanced dependency analysis - including ALL directories...")
-
-        # Store root_path for use in other methods
+        # Store root_path for use in other methods - use provided path strictly
         self.root_path = Path(root_path).resolve()
+        print(f"🔍 Enhanced dependency analysis starting at: {self.root_path}")
+        print("🔍 Including ALL directories...")
 
         # Initialize git analyzer
         self.git_analyzer = GitAnalyzer(self.root_path)

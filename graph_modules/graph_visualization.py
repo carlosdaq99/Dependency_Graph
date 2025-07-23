@@ -20,6 +20,7 @@ def get_graph_visualization_js() -> str:
         let showTestDependencies = true;
         let selectedNode = null;
         let highlightedNodes = new Set();
+        let showCompletePaths = false; // New toggle for complete path highlighting
 
         // Layout state management - SIMPLIFIED APPROACH
         let currentLayout = "hierarchical";
@@ -400,11 +401,7 @@ def get_graph_visualization_js() -> str:
                 // For force layout (circles): center text within the circle
                 nodeSelection.append("text")
                     .attr("class", "node-label force-node-label")
-                    .text(d => {
-                        // Truncate long names for circles
-                        const maxLength = Math.floor(calculateCircleRadius(d) / 3);
-                        return d.stem.length > maxLength ? d.stem.substring(0, maxLength) + "..." : d.stem;
-                    })
+                    .text(d => d.stem)  // Show full text without truncation
                     .attr("text-anchor", "middle")
                     .attr("dominant-baseline", "central")
                     .attr("dy", "0")
@@ -416,15 +413,7 @@ def get_graph_visualization_js() -> str:
                     .style("font-weight", "bold")
                     .style("pointer-events", "none");
                 
-                // Add folder labels below the circle
-                nodeSelection.filter(d => d.folder !== "root")
-                    .append("text")
-                    .attr("class", "folder-label-text force-folder-label")
-                    .text(d => `(${d.folder})`)
-                    .attr("text-anchor", "middle")
-                    .attr("dy", d => calculateCircleRadius(d) + 15)
-                    .style("font-size", "10px")
-                    .style("pointer-events", "none");
+                // Folder labels removed as requested
             } else {
                 // For hierarchical layout (rectangles): original positioning
                 nodeSelection.append("text")
@@ -432,12 +421,7 @@ def get_graph_visualization_js() -> str:
                     .text(d => d.stem)
                     .attr("dy", "-2px");
                 
-                // Add folder labels
-                nodeSelection.filter(d => d.folder !== "root")
-                    .append("text")
-                    .attr("class", "folder-label-text")
-                    .text(d => `(${d.folder})`)
-                    .attr("dy", "10px");
+                // Folder labels removed as requested
             }
         }
         
@@ -484,7 +468,7 @@ def get_graph_visualization_js() -> str:
                 .attr("d", "M0,-5L10,0L0,5")
                 .attr("fill", "#666");
             
-            // Highlighted arrow
+            // Highlighted arrow (orange)
             defs.append("marker")
                 .attr("id", "arrowhead-highlighted")
                 .attr("viewBox", "0 -5 10 10")
@@ -496,6 +480,19 @@ def get_graph_visualization_js() -> str:
                 .append("path")
                 .attr("d", "M0,-5L10,0L0,5")
                 .attr("fill", "#ff6600");
+            
+            // Path highlighted arrow (blue)
+            defs.append("marker")
+                .attr("id", "arrowhead-path")
+                .attr("viewBox", "0 -5 10 10")
+                .attr("refX", 8)
+                .attr("refY", 0)
+                .attr("markerWidth", 8)
+                .attr("markerHeight", 8)
+                .attr("orient", "auto")
+                .append("path")
+                .attr("d", "M0,-5L10,0L0,5")
+                .attr("fill", "#3b82f6");
             
             // Dimmed arrow
             defs.append("marker")
@@ -555,53 +552,122 @@ def get_graph_visualization_js() -> str:
             tooltip.style("opacity", 0).attr("aria-hidden", "true");
         }
         
-        // Enhanced highlighting
+        // Enhanced highlighting with dual-mode support
         function highlightEnhancedDirectPath(clickedNode) {
             selectedNode = clickedNode;
-            const connected = findEnhancedConnections(clickedNode.id);
             
-            // Reset all elements
-            window.graphElements.node.classed("dimmed highlighted", false);
-            window.graphElements.node.selectAll(".node-rect, .node-circle").classed("dimmed highlighted", false);
-            window.graphElements.link
-                .classed("dimmed highlighted", false)
-                .attr("marker-end", "url(#arrowhead)");
-            
-            // Apply highlighting
-            window.graphElements.node
-                .classed("highlighted", d => connected.has(d.id))
-                .classed("dimmed", d => !connected.has(d.id));
-            
-            window.graphElements.node.selectAll(".node-rect, .node-circle")
-                .classed("highlighted", function() {
-                    const nodeData = d3.select(this.parentNode).datum();
-                    return connected.has(nodeData.id);
-                })
-                .classed("dimmed", function() {
-                    const nodeData = d3.select(this.parentNode).datum();
-                    return !connected.has(nodeData.id);
-                });
-            
-            window.graphElements.link
-                .classed("highlighted", d => connected.has(d.source_name) && connected.has(d.target_name))
-                .classed("dimmed", d => !(connected.has(d.source_name) && connected.has(d.target_name)))
-                .attr("marker-end", d => {
-                    if (connected.has(d.source_name) && connected.has(d.target_name)) {
-                        return "url(#arrowhead-highlighted)";
-                    } else if (!(connected.has(d.source_name) && connected.has(d.target_name))) {
-                        return "url(#arrowhead-dimmed)";
-                    } else {
-                        return "url(#arrowhead)";
-                    }
-                });
-            
-            highlightedNodes = connected;
+            if (showCompletePaths) {
+                // Advanced highlighting: direct connections (orange) + complete paths (blue)
+                const directConnected = findDirectConnections(clickedNode.id);
+                const allReachable = findAllReachableNodes(clickedNode.id);
+                const pathConnected = new Set([...allReachable].filter(id => !directConnected.has(id)));
+                
+                // Reset all elements
+                window.graphElements.node.classed("dimmed highlighted path-highlighted", false);
+                window.graphElements.node.selectAll(".node-rect, .node-circle").classed("dimmed highlighted path-highlighted", false);
+                window.graphElements.link
+                    .classed("dimmed highlighted path-highlighted", false)
+                    .attr("marker-end", "url(#arrowhead)");
+                
+                // Apply dual highlighting
+                window.graphElements.node
+                    .classed("highlighted", d => directConnected.has(d.id))
+                    .classed("path-highlighted", d => pathConnected.has(d.id))
+                    .classed("dimmed", d => !allReachable.has(d.id));
+                
+                window.graphElements.node.selectAll(".node-rect, .node-circle")
+                    .classed("highlighted", function() {
+                        const nodeData = d3.select(this.parentNode).datum();
+                        return directConnected.has(nodeData.id);
+                    })
+                    .classed("path-highlighted", function() {
+                        const nodeData = d3.select(this.parentNode).datum();
+                        return pathConnected.has(nodeData.id);
+                    })
+                    .classed("dimmed", function() {
+                        const nodeData = d3.select(this.parentNode).datum();
+                        return !allReachable.has(nodeData.id);
+                    });
+                
+                // Apply dimming to text elements for better visibility
+                window.graphElements.node.selectAll(".node-label")
+                    .classed("dimmed", function() {
+                        const nodeData = d3.select(this.parentNode).datum();
+                        return !allReachable.has(nodeData.id);
+                    });
+                
+                // Highlight edges
+                window.graphElements.link
+                    .classed("highlighted", d => directConnected.has(d.source_name) && directConnected.has(d.target_name))
+                    .classed("path-highlighted", d => pathConnected.has(d.source_name) || pathConnected.has(d.target_name))
+                    .classed("dimmed", d => !(allReachable.has(d.source_name) && allReachable.has(d.target_name)))
+                    .attr("marker-end", d => {
+                        if (directConnected.has(d.source_name) && directConnected.has(d.target_name)) {
+                            return "url(#arrowhead-highlighted)";
+                        } else if (pathConnected.has(d.source_name) || pathConnected.has(d.target_name)) {
+                            return "url(#arrowhead-path)";
+                        } else if (!(allReachable.has(d.source_name) && allReachable.has(d.target_name))) {
+                            return "url(#arrowhead-dimmed)";
+                        } else {
+                            return "url(#arrowhead)";
+                        }
+                    });
+                
+                highlightedNodes = allReachable;
+            } else {
+                // Simple highlighting: only direct connections (orange)
+                const connected = findDirectConnections(clickedNode.id);
+                
+                // Reset all elements
+                window.graphElements.node.classed("dimmed highlighted path-highlighted", false);
+                window.graphElements.node.selectAll(".node-rect, .node-circle").classed("dimmed highlighted path-highlighted", false);
+                window.graphElements.link
+                    .classed("dimmed highlighted path-highlighted", false)
+                    .attr("marker-end", "url(#arrowhead)");
+                
+                // Apply simple highlighting
+                window.graphElements.node
+                    .classed("highlighted", d => connected.has(d.id))
+                    .classed("dimmed", d => !connected.has(d.id));
+                
+                window.graphElements.node.selectAll(".node-rect, .node-circle")
+                    .classed("highlighted", function() {
+                        const nodeData = d3.select(this.parentNode).datum();
+                        return connected.has(nodeData.id);
+                    })
+                    .classed("dimmed", function() {
+                        const nodeData = d3.select(this.parentNode).datum();
+                        return !connected.has(nodeData.id);
+                    });
+                
+                // Apply dimming to text elements for better visibility
+                window.graphElements.node.selectAll(".node-label")
+                    .classed("dimmed", function() {
+                        const nodeData = d3.select(this.parentNode).datum();
+                        return !connected.has(nodeData.id);
+                    });
+                
+                window.graphElements.link
+                    .classed("highlighted", d => connected.has(d.source_name) && connected.has(d.target_name))
+                    .classed("dimmed", d => !(connected.has(d.source_name) && connected.has(d.target_name)))
+                    .attr("marker-end", d => {
+                        if (connected.has(d.source_name) && connected.has(d.target_name)) {
+                            return "url(#arrowhead-highlighted)";
+                        } else if (!(connected.has(d.source_name) && connected.has(d.target_name))) {
+                            return "url(#arrowhead-dimmed)";
+                        } else {
+                            return "url(#arrowhead)";
+                        }
+                    });
+                
+                highlightedNodes = connected;
+            }
         }
         
-        function findEnhancedConnections(nodeId) {
+        function findDirectConnections(nodeId) {
             const connected = new Set([nodeId]);
             
-            // Find all connections respecting current filters
+            // Find direct connections only
             graphData.edges.forEach(edge => {
                 if (!shouldShowEdge(edge)) return;
                 
@@ -616,11 +682,45 @@ def get_graph_visualization_js() -> str:
             return connected;
         }
         
+        function findAllReachableNodes(nodeId) {
+            const visited = new Set();
+            const toVisit = [nodeId];
+            
+            while (toVisit.length > 0) {
+                const currentNode = toVisit.pop();
+                if (visited.has(currentNode)) continue;
+                
+                visited.add(currentNode);
+                
+                // Find all nodes reachable by following edge directions
+                graphData.edges.forEach(edge => {
+                    if (!shouldShowEdge(edge)) return;
+                    
+                    // Follow outgoing edges (dependencies this node depends on)
+                    if (edge.source_name === currentNode && !visited.has(edge.target_name)) {
+                        toVisit.push(edge.target_name);
+                    }
+                    // Follow incoming edges (nodes that depend on this one)
+                    if (edge.target_name === currentNode && !visited.has(edge.source_name)) {
+                        toVisit.push(edge.source_name);
+                    }
+                });
+            }
+            
+            return visited;
+        }
+        
+        function findEnhancedConnections(nodeId) {
+            // Backward compatibility - use direct connections when not in path mode
+            return findDirectConnections(nodeId);
+        }
+        
         function resetHighlighting() {
             selectedNode = null;
             highlightedNodes.clear();
-            window.graphElements.node.classed("dimmed highlighted", false);
-            window.graphElements.node.selectAll(".node-rect, .node-circle").classed("dimmed highlighted", false);
+            window.graphElements.node.classed("dimmed highlighted path-highlighted", false);
+            window.graphElements.node.selectAll(".node-rect, .node-circle").classed("dimmed highlighted path-highlighted", false);
+            window.graphElements.node.selectAll(".node-label").classed("dimmed", false);
             window.graphElements.link
                 .classed("dimmed highlighted", false)
                 .attr("marker-end", "url(#arrowhead)");

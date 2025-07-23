@@ -43,38 +43,52 @@ def get_graph_styles_with_theme_support() -> str:
             /* Unified transparency settings for dimmed elements */
             --dimmed-opacity: 0.05;
             --dimmed-link-opacity: 0.01;
-            --dimmed-text-opacity: 0.01;
+            --dimmed-text-opacity: 0.3;  /* Increased for better text visibility */
         }
 
         [data-theme="dark"] {
-            /* Dark theme variables */
-            --bg-primary: #1a1a1a;
-            --bg-secondary: #2d2d2d;
-            --bg-container: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            --text-primary: #ffffff;
-            --text-secondary: #cccccc;
-            --text-muted: #999999;
-            --border-color: #404040;
-            --border-color-hover: #555555;
-            --shadow-light: rgba(0,0,0,0.3);
-            --shadow-medium: rgba(0,0,0,0.5);
-            --shadow-heavy: rgba(0,0,0,0.7);
-            --accent-color: #ff8533;
-            --accent-color-hover: #ff9955;
-            --graph-bg: #2d2d2d;
-            --node-stroke: #ffffff;
-            --link-color: #cccccc;
-            --control-bg: #2d2d2d;
-            --control-border: #404040;
-            --button-bg: #404040;
-            --button-hover: #555555;
-            --input-bg: #404040;
-            --input-border: #555555;
+            /* Professional Dark Theme - Modern & Clean */
+            
+            /* Primary background colors using sophisticated grays */
+            --bg-primary: #092748;          /* Deep charcoal for main background */
+            --bg-secondary: #98c3d8;        /* Slightly lighter for panels */
+            --bg-container: linear-gradient(135deg, #125566 0%, #2e7f91 100%);  /* Subtle professional gradient */
+            
+            /* Text colors with proper contrast hierarchy */
+            --text-primary: #000000;        /* Soft white for primary text - easier on eyes */
+            --text-secondary: #1c1c1e;      /* Muted gray for secondary text */
+            --text-muted: #50555b;          /* Subtle gray for less important text */
+            
+            /* Border and structural colors */
+            --border-color: #30363d;        /* Professional border gray */
+            --border-color-hover: #484f58;  /* Lighter on hover */
+            
+            /* Shadow system using deep blues instead of pure black */
+            --shadow-light: rgba(16, 22, 35, 0.3);   /* Subtle depth */
+            --shadow-medium: rgba(16, 22, 35, 0.5);  /* Medium depth */
+            --shadow-heavy: rgba(16, 22, 35, 0.7);   /* Strong depth */
+            
+            /* Accent colors - professional blue palette */
+            --accent-color: #58a6ff;        /* Modern blue accent */
+            --accent-color-hover: #79b8ff;  /* Lighter blue on hover */
+            
+            /* Graph-specific colors */
+            --graph-bg: #092748;           /* Consistent with main background */
+            --node-stroke: #58a6ff;        /* Blue stroke for better visibility */
+            --link-color: #dae0e8;         /* Muted gray for links */
+            
+            /* Control panel styling */
+            --control-bg: #1d5b69;         /* Slightly different from main for distinction */
+            --control-border: #30363d;     /* Consistent border */
+            --button-bg: #6abfd5;          /* Button background */
+            --button-hover: #6abfd5;       /* Button hover state */
+            --input-bg: #85bfd2;           /* Input field background */
+            --input-border: #30363d;       /* Input field border */
             
             /* Unified transparency settings remain the same for dark theme */
             --dimmed-opacity: 0.05;
             --dimmed-link-opacity: 0.01;
-            --dimmed-text-opacity: 0.01;
+            --dimmed-text-opacity: 0.3;  /* Increased for better text visibility */
         }
 
         body {
@@ -175,6 +189,12 @@ def get_graph_styles_with_theme_support() -> str:
             filter: drop-shadow(0 0 12px var(--accent-color));
         }
         
+        .node-rect.path-highlighted {
+            stroke: #3b82f6;  /* Blue for path highlighting */
+            stroke-width: 2.5;
+            filter: drop-shadow(0 0 8px #3b82f6);
+        }
+        
         .node-rect.dimmed {
             opacity: var(--dimmed-opacity);
         }
@@ -197,6 +217,12 @@ def get_graph_styles_with_theme_support() -> str:
             stroke: var(--accent-color);
             stroke-width: 3;
             filter: drop-shadow(0 0 12px var(--accent-color));
+        }
+        
+        .node-circle.path-highlighted {
+            stroke: #3b82f6;  /* Blue for path highlighting */
+            stroke-width: 2.5;
+            filter: drop-shadow(0 0 8px #3b82f6);
         }
         
         .node-circle.dimmed {
@@ -238,6 +264,12 @@ def get_graph_styles_with_theme_support() -> str:
             stroke: var(--accent-color);
             stroke-width: 3;
             opacity: 1;
+        }
+        
+        .link.path-highlighted {
+            stroke: #3b82f6;  /* Blue for path highlighting */
+            stroke-width: 2.5;
+            opacity: 0.9;
         }
         
         .link.dimmed {

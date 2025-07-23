@@ -3,20 +3,15 @@ Dependency Graph Improvements - 23/07/2025
 ────────────────────────────────────────────────────────────────────────────────────────────
 📝  NOTES
 --------------------------------------------------------------------------------------------
-get_graph_visualization
-there are now two versions, the origincal and _clean
-check which one is being used and delete the other
+Highlighted Nodes
+I want to add a toggle to both views that enables highlighting of all nodes that are connected to the selected node by an unbroken path, following the direction of edges.
+Currently, only nodes directly connected to the selected node are highlighted in orange, along with their connecting edges.
+When the toggle is enabled, all nodes and edges that can be reached from the selected node by following a continuous path (excluding immediate connections, which remain orange) should be highlighted in blue.
+Only nodes that are reachable via a direct path from the selected node should be highlighted. Nodes that are not on such a path—such as siblings, cousins, or nodes connected solely through shared ancestors or descendants—should not be included.
 
-Root direstory Path
-I want to change the root directory definition to a simple path that the user writes in the script.
-Ensure all relevant calls and dependencies on the current structure are changed appropriately
-Test exhaustivelly.
+Remove the folder name in parethesis under the module name in the nodes
 
-Filters
-At the moment it filters to less that value, i want to be able to choose a range instead.
-
-Force Directed Node Format
-They circles are showing blank and directories are not present in controls. bring them back as in the hierarchical view, including checklist filters and legend colors, excacly the same as for hierarchical.
+dimmed-text-opacity not making a visual difference/being applied
 
 Code Complexity Metrics
 Calculate cyclomatic complexity, function length, and nesting depth for each module.

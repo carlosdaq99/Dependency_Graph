@@ -141,6 +141,17 @@ def get_html_body(project_maximums: Dict[str, int] = None) -> str:
             </div>
             
             <div class="section">
+                <h3>🔗 Highlighting Options</h3>
+                <div class="folder-item" id="path-highlighting-toggle" role="checkbox" tabindex="0">
+                    <span class="folder-checkbox">☐</span>
+                    <span class="folder-label">Show Complete Paths</span>
+                </div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px; padding: 0 12px;">
+                    When enabled, highlights all nodes reachable by following a continuous path from the selected node (blue), while direct connections remain orange.
+                </div>
+            </div>
+            
+            <div class="section">
                 <h3>🔧 Controls</h3>
                 <button class="reset-button" onclick="resetAllFilters()">Reset All Filters</button>
             </div>

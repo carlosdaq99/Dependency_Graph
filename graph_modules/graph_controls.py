@@ -95,6 +95,13 @@ def get_graph_controls_js() -> str:
             
             testToggle.on("click", toggleTestDependencies);
             
+            // Path highlighting toggle
+            const pathToggle = d3.select("#path-highlighting-toggle");
+            pathToggle.select(".folder-checkbox")
+                .text(showCompletePaths ? "☑" : "☐");
+            
+            pathToggle.on("click", togglePathHighlighting);
+            
             // Update "Select All" toggle
             const allFolders = Object.keys(graphData.subfolder_info);
             const allSelected = allFolders.every(folder => checkedFolders.has(folder));
@@ -152,6 +159,16 @@ def get_graph_controls_js() -> str:
             // If in force layout, restart simulation to reposition visible nodes
             if (currentLayout === "force" && typeof restartForceSimulation === "function") {
                 restartForceSimulation();
+            }
+        }
+        
+        function togglePathHighlighting() {
+            showCompletePaths = !showCompletePaths;
+            updateEnhancedControls();
+            
+            // Re-apply highlighting if a node is currently selected
+            if (selectedNode) {
+                highlightEnhancedDirectPath(selectedNode);
             }
         }
         

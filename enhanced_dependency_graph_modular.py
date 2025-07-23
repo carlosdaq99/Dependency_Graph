@@ -39,12 +39,8 @@ DEFAULT_ROOT_PATH = (
     r"\AGS Section\Geo_Borehole_Sections_Render"
 )
 
-try:
-    # Try importing from parent directory context (when run from parent)
-    from dependency_graph.graph_modules import main
-except ImportError:
-    # Fall back to current directory context (when run from dependency_graph/)
-    from graph_modules import main
+# Fall back to current directory context (when run from dependency_graph/)
+from graph_modules import main
 
 if __name__ == "__main__":
     # Get root path from command line argument or use default
