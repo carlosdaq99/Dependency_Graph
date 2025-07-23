@@ -1,0 +1,35 @@
+────────────────────────────────────────────────────────────────────────────────────────────
+Dependency Graph Improvements - 23/07/2025
+────────────────────────────────────────────────────────────────────────────────────────────
+📝  NOTES
+--------------------------------------------------------------------------------------------
+get_graph_visualization
+there are now two versions, the origincal and _clean
+check which one is being used and delete the other
+
+Root direstory Path
+I want to change the root directory definition to a simple path that the user writes in the script.
+Ensure all relevant calls and dependencies on the current structure are changed appropriately
+Test exhaustivelly.
+
+Filters
+At the moment it filters to less that value, i want to be able to choose a range instead.
+
+Force Directed Node Format
+They circles are showing blank and directories are not present in controls. bring them back as in the hierarchical view, including checklist filters and legend colors, excacly the same as for hierarchical.
+
+Code Complexity Metrics
+Calculate cyclomatic complexity, function length, and nesting depth for each module.
+Highlight modules with high complexity for refactoring.
+
+Dead Code Detection
+Identify unused functions, classes, or modules.
+Flag orphaned code for cleanup.
+
+Performance Hotspot Detection
+Integrate with profiling tools to highlight slow or resource-heavy modules.
+
+Transparency settings
+For unselected (dimmed) elements in visualisation;
+including links, nodes (already included) and node text.
+These should be common and only defined once for both the light and dark theme
