@@ -12,10 +12,10 @@ Dead Code Detection
 Identify unused functions, classes, or modules.
 Flag orphaned code for cleanup.
 
-Performance Hotspot Detection
-Integrate with profiling tools to highlight slow or resource-heavy modules.
+blue edges between orange and blue nodes not showing
 
-Transparency settings
-For unselected (dimmed) elements in visualisation;
-including links, nodes (already included) and node text.
-These should be common and only defined once for both the light and dark theme
+blue nodes stay in the diagram as blue after a node has been unselected, not returning to default 
+
+edges STILL not being dimmed as the setting says, this happened with the text earlier, compare how they are implemented
+
+for performance the red glowing is still present and no warning icon

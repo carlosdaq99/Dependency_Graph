@@ -11,8 +11,8 @@ The actual implementation is now split across:
 """
 
 # Import from the new submodule structure
-from .graph_styles_internal import get_styles as _get_styles
-from .graph_styles_internal import get_css_styles as _get_css_styles
+from .graph_styles import get_styles as _get_styles
+from .graph_styles import get_css_styles as _get_css_styles
 
 
 def get_styles() -> str:
@@ -37,14 +37,3 @@ def get_css_styles() -> str:
         str: Complete CSS styles for the dependency graph
     """
     return _get_css_styles()
-
-
-# Another legacy alias for backward compatibility
-def get_graph_styles() -> str:
-    """
-    Another legacy function name for backward compatibility.
-
-    Returns:
-        str: Complete CSS styles for the dependency graph
-    """
-    return _get_styles()
