@@ -164,6 +164,7 @@ def get_graph_visualization_js() -> str:
                     let classes = "node-rect";
                     if (d.hotspot_score && d.hotspot_score > 0.5) classes += " hotspot";
                     if (d.change_classification === "very_high") classes += " very-active";
+                    if (d.is_performance_hotspot) classes += " performance-hotspot";
                     return classes;
                 })
                 .attr("width", d => d.width)
@@ -245,6 +246,7 @@ def get_graph_visualization_js() -> str:
                     let classes = "node-circle";
                     if (d.hotspot_score && d.hotspot_score > 0.5) classes += " hotspot";
                     if (d.change_classification === "very_high") classes += " very-active";
+                    if (d.is_performance_hotspot) classes += " performance-hotspot";
                     return classes;
                 })
                 .attr("r", d => calculateCircleRadius(d))
@@ -449,6 +451,12 @@ def get_graph_visualization_js() -> str:
                 // Start force simulation
                 initializeForceDirectedLayout();
             }
+            
+            // Ensure performance hotspot visualization is applied after layout switch
+            setTimeout(() => {
+                applyPerformanceHotspotVisualization();
+                updateEnhancedVisibility();
+            }, 100);
         }
 
         // Enhanced arrow markers creation
@@ -683,31 +691,45 @@ def get_graph_visualization_js() -> str:
         }
         
         function findAllReachableNodes(nodeId) {
-            const visited = new Set();
-            const toVisit = [nodeId];
+            const directLineage = new Set([nodeId]);
             
-            while (toVisit.length > 0) {
-                const currentNode = toVisit.pop();
-                if (visited.has(currentNode)) continue;
+            // Find all ancestors (nodes this node depends on, recursively)
+            const findAncestors = (currentId, visited = new Set()) => {
+                if (visited.has(currentId)) return;
+                visited.add(currentId);
                 
-                visited.add(currentNode);
-                
-                // Find all nodes reachable by following edge directions
                 graphData.edges.forEach(edge => {
                     if (!shouldShowEdge(edge)) return;
                     
-                    // Follow outgoing edges (dependencies this node depends on)
-                    if (edge.source_name === currentNode && !visited.has(edge.target_name)) {
-                        toVisit.push(edge.target_name);
-                    }
-                    // Follow incoming edges (nodes that depend on this one)
-                    if (edge.target_name === currentNode && !visited.has(edge.source_name)) {
-                        toVisit.push(edge.source_name);
+                    // Follow dependencies: if current node depends on another, that's an ancestor
+                    if (edge.source_name === currentId && !visited.has(edge.target_name)) {
+                        directLineage.add(edge.target_name);
+                        findAncestors(edge.target_name, visited);
                     }
                 });
-            }
+            };
             
-            return visited;
+            // Find all descendants (nodes that depend on this node, recursively)
+            const findDescendants = (currentId, visited = new Set()) => {
+                if (visited.has(currentId)) return;
+                visited.add(currentId);
+                
+                graphData.edges.forEach(edge => {
+                    if (!shouldShowEdge(edge)) return;
+                    
+                    // Follow dependents: if another node depends on current, that's a descendant
+                    if (edge.target_name === currentId && !visited.has(edge.source_name)) {
+                        directLineage.add(edge.source_name);
+                        findDescendants(edge.source_name, visited);
+                    }
+                });
+            };
+            
+            // Build complete direct lineage
+            findAncestors(nodeId);
+            findDescendants(nodeId);
+            
+            return directLineage;
         }
         
         function findEnhancedConnections(nodeId) {
@@ -821,6 +843,44 @@ def get_graph_visualization_js() -> str:
                 .style("opacity", d => {
                     if (!shouldShowEdge(d)) return 0;
                     return d.is_test_related && !showTestDependencies ? 0.3 : 0.8;
+                });
+            
+            // Apply performance hotspot visualization
+            applyPerformanceHotspotVisualization();
+        }
+        
+        function applyPerformanceHotspotVisualization() {
+            if (!window.graphElements || !window.graphElements.node) return;
+            
+            // Apply performance hotspot styling to nodes
+            window.graphElements.node.selectAll(".node-rect, .node-circle")
+                .classed("performance-hotspot", d => d.is_performance_hotspot === true);
+            
+            // Update tooltips to include performance information
+            window.graphElements.node
+                .select("title")
+                .text(d => {
+                    let tooltip = `${d.name}\\n`;
+                    tooltip += `Folder: ${d.folder}\\n`;
+                    tooltip += `Imports: ${d.imports_count}\\n`;
+                    tooltip += `Size: ${d.size} KB\\n`;
+                    tooltip += `Importance: ${(d.importance * 100).toFixed(1)}%\\n`;
+                    
+                    // Add performance metrics if available
+                    if (d.performance_score !== undefined) {
+                        tooltip += `\\n--- Performance Metrics ---\\n`;
+                        tooltip += `Performance Score: ${(d.performance_score * 100).toFixed(1)}%\\n`;
+                        if (d.is_performance_hotspot) {
+                            tooltip += `⚠️ PERFORMANCE HOTSPOT\\n`;
+                        }
+                        tooltip += `Complexity: ${d.cyclomatic_complexity}\\n`;
+                        tooltip += `Lines: ${d.total_lines}\\n`;
+                        tooltip += `Functions: ${d.function_count}\\n`;
+                        tooltip += `Heavy Operations: ${d.heavy_operations}\\n`;
+                        tooltip += `Max Nesting: ${d.max_nesting_depth}\\n`;
+                    }
+                    
+                    return tooltip;
                 });
         }
         

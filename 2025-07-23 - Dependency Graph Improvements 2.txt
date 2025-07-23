@@ -3,15 +3,6 @@ Dependency Graph Improvements - 23/07/2025
 ────────────────────────────────────────────────────────────────────────────────────────────
 📝  NOTES
 --------------------------------------------------------------------------------------------
-Highlighted Nodes
-I want to add a toggle to both views that enables highlighting of all nodes that are connected to the selected node by an unbroken path, following the direction of edges.
-Currently, only nodes directly connected to the selected node are highlighted in orange, along with their connecting edges.
-When the toggle is enabled, all nodes and edges that can be reached from the selected node by following a continuous path (excluding immediate connections, which remain orange) should be highlighted in blue.
-Only nodes that are reachable via a direct path from the selected node should be highlighted. Nodes that are not on such a path—such as siblings, cousins, or nodes connected solely through shared ancestors or descendants—should not be included.
-
-Remove the folder name in parethesis under the module name in the nodes
-
-dimmed-text-opacity not making a visual difference/being applied
 
 Code Complexity Metrics
 Calculate cyclomatic complexity, function length, and nesting depth for each module.

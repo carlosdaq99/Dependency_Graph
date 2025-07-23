@@ -43,6 +43,7 @@ Last Modified: July 2025
 
 import ast
 import os
+import re
 from pathlib import Path
 from typing import Dict, List, Set, Tuple, Any
 from .git_analysis import GitAnalyzer
@@ -81,6 +82,9 @@ class EnhancedDependencyAnalyzer:
 
         # Calculate node importance (PageRank-style)
         self._calculate_node_importance()
+
+        # Analyze performance characteristics
+        self._analyze_performance_hotspots(python_files)
 
         # Analyze git history for change patterns
         git_analysis = self._analyze_git_history()
@@ -348,7 +352,6 @@ class EnhancedDependencyAnalyzer:
         # Build adjacency matrix
         nodes = list(self.dependencies.keys())
         n = len(nodes)
-        node_to_index = {node: i for i, node in enumerate(nodes)}
 
         # Initialize importance scores
         importance = {node: 1.0 / n for node in nodes}
@@ -386,6 +389,158 @@ class EnhancedDependencyAnalyzer:
         self.node_importance = {
             node: score / max_importance for node, score in importance.items()
         }
+
+    def _analyze_performance_hotspots(self, python_files: List[Path]) -> None:
+        """Analyze performance characteristics of Python modules."""
+        print("🔥 Analyzing performance hotspots...")
+
+        self.performance_metrics = {}
+
+        for file_path in python_files:
+            try:
+                content = file_path.read_text(encoding="utf-8", errors="ignore")
+                unique_id = self._create_unique_id(file_path)
+
+                # Calculate basic complexity metrics
+                metrics = self._calculate_complexity_metrics(content, file_path)
+
+                # Calculate performance risk score (0-1)
+                performance_score = self._calculate_performance_score(metrics)
+
+                self.performance_metrics[unique_id] = {
+                    **metrics,
+                    "performance_score": performance_score,
+                    "is_hotspot": performance_score
+                    > 0.6,  # High performance risk threshold
+                }
+
+            except Exception as e:
+                print(f"⚠️ Error analyzing {file_path}: {e}")
+                continue
+
+    def _calculate_complexity_metrics(self, content: str, file_path: Path) -> dict:
+        """Calculate code complexity metrics."""
+        lines = content.split("\n")
+
+        # Basic metrics
+        total_lines = len(lines)
+        code_lines = len(
+            [
+                line
+                for line in lines
+                if line.strip() and not line.strip().startswith("#")
+            ]
+        )
+
+        # Count functions and classes
+        function_count = len(re.findall(r"^\s*def\s+\w+", content, re.MULTILINE))
+        class_count = len(re.findall(r"^\s*class\s+\w+", content, re.MULTILINE))
+
+        # Calculate cyclomatic complexity approximation
+        complexity_indicators = [
+            "if ",
+            "elif ",
+            "else:",
+            "for ",
+            "while ",
+            "try:",
+            "except",
+            "and ",
+            "or ",
+            "?",
+            "break",
+            "continue",
+        ]
+        cyclomatic_complexity = sum(
+            content.count(indicator) for indicator in complexity_indicators
+        )
+
+        # Look for performance-heavy patterns
+        heavy_patterns = [
+            r"\.read\(\)",
+            r"\.write\(\)",
+            r"\.open\(",
+            r"subprocess\.",
+            r"requests\.",
+            r"urllib\.",
+            r"json\.load",
+            r"pickle\.load",
+            r"pandas\.",
+            r"numpy\.",
+            r"scipy\.",
+            r"matplotlib\.",
+            r"for.*in.*range\(.*\d{3,}",
+            r"while.*True:",
+            r"time\.sleep",
+        ]
+
+        heavy_operations = sum(
+            len(re.findall(pattern, content, re.IGNORECASE))
+            for pattern in heavy_patterns
+        )
+
+        # Calculate nesting depth
+        max_nesting = self._calculate_max_nesting_depth(content)
+
+        # File size factor
+        file_size_kb = file_path.stat().st_size / 1024 if file_path.exists() else 0
+
+        return {
+            "total_lines": total_lines,
+            "code_lines": code_lines,
+            "function_count": function_count,
+            "class_count": class_count,
+            "cyclomatic_complexity": cyclomatic_complexity,
+            "heavy_operations": heavy_operations,
+            "max_nesting_depth": max_nesting,
+            "file_size_kb": file_size_kb,
+        }
+
+    def _calculate_max_nesting_depth(self, content: str) -> int:
+        """Calculate maximum nesting depth in the code."""
+        lines = content.split("\n")
+        max_depth = 0
+        current_depth = 0
+
+        for line in lines:
+            stripped = line.strip()
+            if not stripped or stripped.startswith("#"):
+                continue
+
+            # Count leading whitespace (assuming 4 spaces per level)
+            leading_spaces = len(line) - len(line.lstrip())
+            indent_level = leading_spaces // 4
+
+            # Update depth tracking
+            if any(
+                keyword in stripped
+                for keyword in [
+                    "if ",
+                    "for ",
+                    "while ",
+                    "def ",
+                    "class ",
+                    "with ",
+                    "try:",
+                ]
+            ):
+                current_depth = indent_level + 1
+                max_depth = max(max_depth, current_depth)
+
+        return max_depth
+
+    def _calculate_performance_score(self, metrics: dict) -> float:
+        """Calculate overall performance risk score (0-1)."""
+        # Weighted scoring based on different factors
+        factors = {
+            "complexity": min(metrics["cyclomatic_complexity"] / 100, 1.0) * 0.3,
+            "size": min(metrics["file_size_kb"] / 50, 1.0) * 0.2,  # Files over 50KB
+            "heavy_ops": min(metrics["heavy_operations"] / 10, 1.0) * 0.25,
+            "nesting": min(metrics["max_nesting_depth"] / 8, 1.0) * 0.15,
+            "function_density": min(metrics["function_count"] / 20, 1.0) * 0.1,
+        }
+
+        return sum(factors.values())
 
     def _analyze_git_history(self, days: int = 30) -> Dict[str, Any]:
         """Analyze git history for change patterns and hotspots."""
@@ -426,6 +581,9 @@ class EnhancedDependencyAnalyzer:
                 file_path_normalized = info["file_path"].replace("\\", "/")
                 git_data = git_analysis["file_data"].get(file_path_normalized, {})
 
+            # Get performance metrics for this file
+            perf_data = self.performance_metrics.get(unique_id, {})
+
             nodes.append(
                 {
                     "id": unique_id,
@@ -456,6 +614,14 @@ class EnhancedDependencyAnalyzer:
                     ),
                     "hotspot_score": git_data.get("hotspot_score", 0.0),
                     "last_modified": git_data.get("last_modified", "unknown"),
+                    # Performance metrics data
+                    "performance_score": perf_data.get("performance_score", 0.0),
+                    "is_performance_hotspot": perf_data.get("is_hotspot", False),
+                    "cyclomatic_complexity": perf_data.get("cyclomatic_complexity", 0),
+                    "total_lines": perf_data.get("total_lines", 0),
+                    "function_count": perf_data.get("function_count", 0),
+                    "heavy_operations": perf_data.get("heavy_operations", 0),
+                    "max_nesting_depth": perf_data.get("max_nesting_depth", 0),
                 }
             )
             node_index[unique_id] = i

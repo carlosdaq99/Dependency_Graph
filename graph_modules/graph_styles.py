@@ -40,6 +40,17 @@ def get_graph_styles_with_theme_support() -> str:
             --input-bg: #ffffff;
             --input-border: #ced4da;
             
+            /* Color definitions */
+            --accent-color: #ff6600;       /* Orange for direct connections */
+            --path-color: #3b82f6;         /* Blue for path connections */
+            --text-primary: #24292f;       /* Main text color for light theme */
+            --text-secondary: #656d76;     /* Secondary text color */
+            --bg-primary: #ffffff;         /* Main background */
+            --bg-secondary: #f6f8fa;       /* Secondary background */
+            --bg-tertiary: #f6f8fa;        /* Cards, panels */
+            --border-color: #d0d7de;       /* General borders */
+            --hotspot-color: #ff4444;      /* Performance hotspot indicator */
+            
             /* Unified transparency settings for dimmed elements */
             --dimmed-opacity: 0.05;
             --dimmed-link-opacity: 0.01;
@@ -76,6 +87,17 @@ def get_graph_styles_with_theme_support() -> str:
             --graph-bg: #092748;           /* Consistent with main background */
             --node-stroke: #58a6ff;        /* Blue stroke for better visibility */
             --link-color: #dae0e8;         /* Muted gray for links */
+            
+            /* Color definitions */
+            --accent-color: #ff6600;       /* Orange for direct connections */
+            --path-color: #3b82f6;         /* Blue for path connections */
+            --text-primary: #f0f6fc;       /* Light text for dark theme */
+            --text-secondary: #7d8590;     /* Secondary text */
+            --bg-primary: #0d1117;         /* Main background */
+            --bg-secondary: #161b22;       /* Secondary background */
+            --bg-tertiary: #21262d;        /* Cards, panels */
+            --border-color: #30363d;       /* General borders */
+            --hotspot-color: #ff4444;      /* Performance hotspot indicator */
             
             /* Control panel styling */
             --control-bg: #1d5b69;         /* Slightly different from main for distinction */
@@ -190,9 +212,9 @@ def get_graph_styles_with_theme_support() -> str:
         }
         
         .node-rect.path-highlighted {
-            stroke: #3b82f6;  /* Blue for path highlighting */
+            stroke: var(--path-color);  /* Blue for path highlighting */
             stroke-width: 2.5;
-            filter: drop-shadow(0 0 8px #3b82f6);
+            filter: drop-shadow(0 0 8px var(--path-color));
         }
         
         .node-rect.dimmed {
@@ -220,9 +242,28 @@ def get_graph_styles_with_theme_support() -> str:
         }
         
         .node-circle.path-highlighted {
-            stroke: #3b82f6;  /* Blue for path highlighting */
+            stroke: var(--path-color);  /* Blue for path highlighting */
             stroke-width: 2.5;
-            filter: drop-shadow(0 0 8px #3b82f6);
+            filter: drop-shadow(0 0 8px var(--path-color));
+        }
+        
+        .node-circle.performance-hotspot {
+            stroke: var(--hotspot-color);
+            stroke-width: 3;
+            filter: drop-shadow(0 0 10px var(--hotspot-color));
+            animation: hotspot-pulse 2s infinite;
+        }
+        
+        .node-rect.performance-hotspot {
+            stroke: var(--hotspot-color);
+            stroke-width: 3;
+            filter: drop-shadow(0 0 10px var(--hotspot-color));
+            animation: hotspot-pulse 2s infinite;
+        }
+        
+        @keyframes hotspot-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
         }
         
         .node-circle.dimmed {
@@ -261,13 +302,13 @@ def get_graph_styles_with_theme_support() -> str:
         }
         
         .link.highlighted {
-            stroke: var(--accent-color);
+            stroke: var(--accent-color);  /* Orange for direct connections */
             stroke-width: 3;
             opacity: 1;
         }
         
         .link.path-highlighted {
-            stroke: #3b82f6;  /* Blue for path highlighting */
+            stroke: var(--path-color);  /* Blue for path highlighting */
             stroke-width: 2.5;
             opacity: 0.9;
         }
