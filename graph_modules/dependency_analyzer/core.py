@@ -20,8 +20,8 @@ class EnhancedDependencyAnalyzer:
     """Enhanced dependency analyzer with complete directory inclusion."""
 
     def __init__(self, exclude_folders: List[str] = None):
-        # Remove test exclusion - include all directories, but exclude dependency_graph folder
-        self.exclude_folders = exclude_folders or ["__pycache__", "dependency_graph"]
+        # Only exclude cache directories by default - be more targeted
+        self.exclude_folders = exclude_folders or ["__pycache__"]
         self.dependencies = {}
         self.node_importance = {}
         self.root_path = None  # Will be set in analyze_project
@@ -72,10 +72,17 @@ class EnhancedDependencyAnalyzer:
         root = Path(root_path)
 
         for file_path in root.rglob("*.py"):
-            # Only exclude __pycache__ and hidden directories
-            if any(excluded in file_path.parts for excluded in self.exclude_folders):
+            # Skip files in excluded directories (more targeted exclusion)
+            should_exclude = False
+            for parent in file_path.parents:
+                if parent.name in self.exclude_folders:
+                    should_exclude = True
+                    break
+
+            if should_exclude:
                 continue
 
+            # Skip hidden files
             if file_path.name.startswith("."):
                 continue
 

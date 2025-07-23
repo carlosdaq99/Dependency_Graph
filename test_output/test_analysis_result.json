@@ -1,0 +1,2915 @@
+{
+  "nodes": [
+    {
+      "id": "dependency_analyzer.py",
+      "name": "dependency_analyzer",
+      "stem": "dependency_analyzer",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "dependency_analyzer.py",
+      "imports_count": 1,
+      "importance": 1.0,
+      "is_test": false,
+      "is_init": false,
+      "size": 2507,
+      "index": 0,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.1187421875,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 30,
+      "total_lines": 52,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "dependency_analyzer_new.py",
+      "name": "dependency_analyzer_new",
+      "stem": "dependency_analyzer_new",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "dependency_analyzer_new.py",
+      "imports_count": 1,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 2507,
+      "index": 1,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.1187421875,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 30,
+      "total_lines": 52,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "force_directed_layout.py",
+      "name": "force_directed_layout",
+      "stem": "force_directed_layout",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "force_directed_layout.py",
+      "imports_count": 0,
+      "importance": 0.07278576835730508,
+      "is_test": false,
+      "is_init": false,
+      "size": 11297,
+      "index": 2,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.33755078125,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 52,
+      "total_lines": 269,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "git_analysis.py",
+      "name": "git_analysis",
+      "stem": "git_analysis",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "git_analysis.py",
+      "imports_count": 0,
+      "importance": 0.09595003785011355,
+      "is_test": false,
+      "is_init": false,
+      "size": 13793,
+      "index": 3,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.70176171875,
+      "is_performance_hotspot": true,
+      "cyclomatic_complexity": 102,
+      "total_lines": 390,
+      "function_count": 13,
+      "heavy_operations": 6,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "graph_controls.py",
+      "name": "graph_controls",
+      "stem": "graph_controls",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "graph_controls.py",
+      "imports_count": 1,
+      "importance": 0.8284128185717887,
+      "is_test": false,
+      "is_init": false,
+      "size": 518,
+      "index": 4,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.0448359375,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 8,
+      "total_lines": 17,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "graph_controls_new.py",
+      "name": "graph_controls_new",
+      "stem": "graph_controls_new",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "graph_controls_new.py",
+      "imports_count": 1,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 518,
+      "index": 5,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.0448359375,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 8,
+      "total_lines": 17,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "graph_styles.py",
+      "name": "graph_styles",
+      "stem": "graph_styles",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "graph_styles.py",
+      "imports_count": 2,
+      "importance": 0.09852384557153672,
+      "is_test": false,
+      "is_init": false,
+      "size": 1479,
+      "index": 6,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.13422265625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 19,
+      "total_lines": 51,
+      "function_count": 3,
+      "heavy_operations": 0,
+      "max_nesting_depth": 3
+    },
+    {
+      "id": "graph_styles_backup.py",
+      "name": "graph_styles_backup",
+      "stem": "graph_styles_backup",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "graph_styles_backup.py",
+      "imports_count": 0,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 20518,
+      "index": 7,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.377765625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 70,
+      "total_lines": 671,
+      "function_count": 2,
+      "heavy_operations": 0,
+      "max_nesting_depth": 4
+    },
+    {
+      "id": "graph_styles_new.py",
+      "name": "graph_styles_new",
+      "stem": "graph_styles_new",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "graph_styles_new.py",
+      "imports_count": 2,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 1204,
+      "index": 8,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.11010546874999999,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 13,
+      "total_lines": 40,
+      "function_count": 2,
+      "heavy_operations": 0,
+      "max_nesting_depth": 3
+    },
+    {
+      "id": "graph_visualization.py",
+      "name": "graph_visualization",
+      "stem": "graph_visualization",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "graph_visualization.py",
+      "imports_count": 1,
+      "importance": 0.8284128185717887,
+      "is_test": false,
+      "is_init": false,
+      "size": 537,
+      "index": 9,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.04491015625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 8,
+      "total_lines": 17,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "graph_visualization_new.py",
+      "name": "graph_visualization_new",
+      "stem": "graph_visualization_new",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "graph_visualization_new.py",
+      "imports_count": 1,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 537,
+      "index": 10,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.04491015625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 8,
+      "total_lines": 17,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "hierarchical_layout.py",
+      "name": "hierarchical_layout",
+      "stem": "hierarchical_layout",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "hierarchical_layout.py",
+      "imports_count": 0,
+      "importance": 0.07278576835730508,
+      "is_test": false,
+      "is_init": false,
+      "size": 9703,
+      "index": 11,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.31007421875,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 45,
+      "total_lines": 221,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "html_generator.py",
+      "name": "html_generator",
+      "stem": "html_generator",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "html_generator.py",
+      "imports_count": 6,
+      "importance": 0.08629825889477669,
+      "is_test": false,
+      "is_init": false,
+      "size": 15055,
+      "index": 12,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.30921484374999997,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 37,
+      "total_lines": 373,
+      "function_count": 5,
+      "heavy_operations": 0,
+      "max_nesting_depth": 6
+    },
+    {
+      "id": "__init__.py",
+      "name": "__init__",
+      "stem": "__init__",
+      "folder": "root",
+      "color": "#DDA0DD",
+      "file_path": "__init__.py",
+      "imports_count": 2,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": true,
+      "size": 1011,
+      "index": 13,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.0528125,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 10,
+      "total_lines": 30,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "dependency_analyzer/core.py",
+      "name": "dependency_analyzer/core",
+      "stem": "core",
+      "folder": "dependency_analyzer",
+      "color": "#FF6B6B",
+      "file_path": "dependency_analyzer\\core.py",
+      "imports_count": 3,
+      "importance": 0.12490537471612415,
+      "is_test": false,
+      "is_init": false,
+      "size": 16116,
+      "index": 14,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.5970703125,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 108,
+      "total_lines": 400,
+      "function_count": 14,
+      "heavy_operations": 2,
+      "max_nesting_depth": 6
+    },
+    {
+      "id": "dependency_analyzer/import_resolver.py",
+      "name": "dependency_analyzer/import_resolver",
+      "stem": "import_resolver",
+      "folder": "dependency_analyzer",
+      "color": "#FF6B6B",
+      "file_path": "dependency_analyzer\\import_resolver.py",
+      "imports_count": 0,
+      "importance": 0.09595003785011355,
+      "is_test": false,
+      "is_init": false,
+      "size": 4759,
+      "index": 15,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.30835546875000003,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 46,
+      "total_lines": 133,
+      "function_count": 4,
+      "heavy_operations": 0,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "dependency_analyzer/metrics.py",
+      "name": "dependency_analyzer/metrics",
+      "stem": "metrics",
+      "folder": "dependency_analyzer",
+      "color": "#FF6B6B",
+      "file_path": "dependency_analyzer\\metrics.py",
+      "imports_count": 0,
+      "importance": 0.09595003785011355,
+      "is_test": false,
+      "is_init": false,
+      "size": 7623,
+      "index": 16,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.4319453125,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 70,
+      "total_lines": 226,
+      "function_count": 7,
+      "heavy_operations": 1,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "dependency_analyzer/__init__.py",
+      "name": "dependency_analyzer/__init__",
+      "stem": "__init__",
+      "folder": "dependency_analyzer",
+      "color": "#FF6B6B",
+      "file_path": "dependency_analyzer\\__init__.py",
+      "imports_count": 1,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": true,
+      "size": 574,
+      "index": 17,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.0360625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 5,
+      "total_lines": 19,
+      "function_count": 0,
+      "heavy_operations": 0,
+      "max_nesting_depth": 1
+    },
+    {
+      "id": "graph_controls/event_handlers.py",
+      "name": "graph_controls/event_handlers",
+      "stem": "event_handlers",
+      "folder": "graph_controls",
+      "color": "#4ECDC4",
+      "file_path": "graph_controls\\event_handlers.py",
+      "imports_count": 0,
+      "importance": 0.08629825889477669,
+      "is_test": false,
+      "is_init": false,
+      "size": 10575,
+      "index": 18,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.22815625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 29,
+      "total_lines": 249,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 5
+    },
+    {
+      "id": "graph_controls/ui_controls.py",
+      "name": "graph_controls/ui_controls",
+      "stem": "ui_controls",
+      "folder": "graph_controls",
+      "color": "#4ECDC4",
+      "file_path": "graph_controls\\ui_controls.py",
+      "imports_count": 0,
+      "importance": 0.08629825889477669,
+      "is_test": false,
+      "is_init": false,
+      "size": 10845,
+      "index": 19,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.27574609375000003,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 32,
+      "total_lines": 255,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "graph_controls/__init__.py",
+      "name": "graph_controls/__init__",
+      "stem": "__init__",
+      "folder": "graph_controls",
+      "color": "#4ECDC4",
+      "file_path": "graph_controls\\__init__.py",
+      "imports_count": 2,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": true,
+      "size": 1374,
+      "index": 20,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.13480078125,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 21,
+      "total_lines": 48,
+      "function_count": 2,
+      "heavy_operations": 0,
+      "max_nesting_depth": 3
+    },
+    {
+      "id": "graph_styles/base_styles.py",
+      "name": "graph_styles/base_styles",
+      "stem": "base_styles",
+      "folder": "graph_styles",
+      "color": "#45B7D1",
+      "file_path": "graph_styles\\base_styles.py",
+      "imports_count": 0,
+      "importance": 0.12983220571536716,
+      "is_test": false,
+      "is_init": false,
+      "size": 9750,
+      "index": 21,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.29612499999999997,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 59,
+      "total_lines": 267,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 4
+    },
+    {
+      "id": "graph_styles/layout_styles.py",
+      "name": "graph_styles/layout_styles",
+      "stem": "layout_styles",
+      "folder": "graph_styles",
+      "color": "#45B7D1",
+      "file_path": "graph_styles\\layout_styles.py",
+      "imports_count": 0,
+      "importance": 0.12983220571536716,
+      "is_test": false,
+      "is_init": false,
+      "size": 14657,
+      "index": 22,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.20841796875000002,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 23,
+      "total_lines": 555,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 4
+    },
+    {
+      "id": "graph_styles/__init__.py",
+      "name": "graph_styles/__init__",
+      "stem": "__init__",
+      "folder": "graph_styles",
+      "color": "#45B7D1",
+      "file_path": "graph_styles\\__init__.py",
+      "imports_count": 2,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": true,
+      "size": 1325,
+      "index": 23,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.13065625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 18,
+      "total_lines": 60,
+      "function_count": 3,
+      "heavy_operations": 0,
+      "max_nesting_depth": 3
+    },
+    {
+      "id": "graph_styles_internal/base_styles.py",
+      "name": "graph_styles_internal/base_styles",
+      "stem": "base_styles",
+      "folder": "graph_styles_internal",
+      "color": "#96CEB4",
+      "file_path": "graph_styles_internal\\base_styles.py",
+      "imports_count": 0,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 9750,
+      "index": 24,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.29612499999999997,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 59,
+      "total_lines": 267,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 4
+    },
+    {
+      "id": "graph_styles_internal/layout_styles.py",
+      "name": "graph_styles_internal/layout_styles",
+      "stem": "layout_styles",
+      "folder": "graph_styles_internal",
+      "color": "#96CEB4",
+      "file_path": "graph_styles_internal\\layout_styles.py",
+      "imports_count": 0,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 14657,
+      "index": 25,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.20841796875000002,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 23,
+      "total_lines": 555,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 4
+    },
+    {
+      "id": "graph_styles_internal/__init__.py",
+      "name": "graph_styles_internal/__init__",
+      "stem": "__init__",
+      "folder": "graph_styles_internal",
+      "color": "#96CEB4",
+      "file_path": "graph_styles_internal\\__init__.py",
+      "imports_count": 2,
+      "importance": 0.10243281604844816,
+      "is_test": false,
+      "is_init": true,
+      "size": 1102,
+      "index": 26,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.1127421875,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 14,
+      "total_lines": 49,
+      "function_count": 2,
+      "heavy_operations": 0,
+      "max_nesting_depth": 3
+    },
+    {
+      "id": "graph_visualization/core.py",
+      "name": "graph_visualization/core",
+      "stem": "core",
+      "folder": "graph_visualization",
+      "color": "#FFEAA7",
+      "file_path": "graph_visualization\\core.py",
+      "imports_count": 0,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": false,
+      "size": 8621,
+      "index": 27,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.20841015625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 25,
+      "total_lines": 222,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 5
+    },
+    {
+      "id": "graph_visualization/interactions.py",
+      "name": "graph_visualization/interactions",
+      "stem": "interactions",
+      "folder": "graph_visualization",
+      "color": "#FFEAA7",
+      "file_path": "graph_visualization\\interactions.py",
+      "imports_count": 0,
+      "importance": 0.07342922028766086,
+      "is_test": false,
+      "is_init": false,
+      "size": 13889,
+      "index": 28,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.32963671875,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 46,
+      "total_lines": 291,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "graph_visualization/layouts.py",
+      "name": "graph_visualization/layouts",
+      "stem": "layouts",
+      "folder": "graph_visualization",
+      "color": "#FFEAA7",
+      "file_path": "graph_visualization\\layouts.py",
+      "imports_count": 0,
+      "importance": 0.07342922028766086,
+      "is_test": false,
+      "is_init": false,
+      "size": 11407,
+      "index": 29,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.34091015625,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 53,
+      "total_lines": 250,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "graph_visualization/rendering.py",
+      "name": "graph_visualization/rendering",
+      "stem": "rendering",
+      "folder": "graph_visualization",
+      "color": "#FFEAA7",
+      "file_path": "graph_visualization\\rendering.py",
+      "imports_count": 0,
+      "importance": 0.07342922028766086,
+      "is_test": false,
+      "is_init": false,
+      "size": 10184,
+      "index": 30,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.31196093750000004,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 45,
+      "total_lines": 227,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 7
+    },
+    {
+      "id": "graph_visualization/__init__.py",
+      "name": "graph_visualization/__init__",
+      "stem": "__init__",
+      "folder": "graph_visualization",
+      "color": "#FFEAA7",
+      "file_path": "graph_visualization\\__init__.py",
+      "imports_count": 4,
+      "importance": 0.06056018168054505,
+      "is_test": false,
+      "is_init": true,
+      "size": 1451,
+      "index": 31,
+      "change_count": 0,
+      "change_frequency_score": 0.0,
+      "change_classification": "none",
+      "total_churn": 0,
+      "churn_classification": "none",
+      "hotspot_score": 0.0,
+      "last_modified": "unknown",
+      "performance_score": 0.10308984375,
+      "is_performance_hotspot": false,
+      "cyclomatic_complexity": 12,
+      "total_lines": 45,
+      "function_count": 1,
+      "heavy_operations": 0,
+      "max_nesting_depth": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 0,
+      "source_name": "dependency_analyzer.py",
+      "target_name": "dependency_analyzer.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 1,
+      "target": 0,
+      "source_name": "dependency_analyzer_new.py",
+      "target_name": "dependency_analyzer.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 4,
+      "target": 4,
+      "source_name": "graph_controls.py",
+      "target_name": "graph_controls.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 5,
+      "target": 4,
+      "source_name": "graph_controls_new.py",
+      "target_name": "graph_controls.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 6,
+      "target": 26,
+      "source_name": "graph_styles.py",
+      "target_name": "graph_styles_internal/__init__.py",
+      "source_folder": "root",
+      "target_folder": "graph_styles_internal",
+      "is_cross_folder": true,
+      "is_test_related": false
+    },
+    {
+      "source": 6,
+      "target": 26,
+      "source_name": "graph_styles.py",
+      "target_name": "graph_styles_internal/__init__.py",
+      "source_folder": "root",
+      "target_folder": "graph_styles_internal",
+      "is_cross_folder": true,
+      "is_test_related": false
+    },
+    {
+      "source": 8,
+      "target": 6,
+      "source_name": "graph_styles_new.py",
+      "target_name": "graph_styles.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 8,
+      "target": 6,
+      "source_name": "graph_styles_new.py",
+      "target_name": "graph_styles.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 9,
+      "target": 9,
+      "source_name": "graph_visualization.py",
+      "target_name": "graph_visualization.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "source_name": "graph_visualization_new.py",
+      "target_name": "graph_visualization.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 12,
+      "target": 6,
+      "source_name": "html_generator.py",
+      "target_name": "graph_styles.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 12,
+      "target": 9,
+      "source_name": "html_generator.py",
+      "target_name": "graph_visualization.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 12,
+      "target": 11,
+      "source_name": "html_generator.py",
+      "target_name": "hierarchical_layout.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 12,
+      "target": 2,
+      "source_name": "html_generator.py",
+      "target_name": "force_directed_layout.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 12,
+      "target": 4,
+      "source_name": "html_generator.py",
+      "target_name": "graph_controls.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "source_name": "html_generator.py",
+      "target_name": "dependency_analyzer.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "source_name": "__init__.py",
+      "target_name": "dependency_analyzer.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 13,
+      "target": 12,
+      "source_name": "__init__.py",
+      "target_name": "html_generator.py",
+      "source_folder": "root",
+      "target_folder": "root",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 14,
+      "target": 3,
+      "source_name": "dependency_analyzer/core.py",
+      "target_name": "git_analysis.py",
+      "source_folder": "dependency_analyzer",
+      "target_folder": "root",
+      "is_cross_folder": true,
+      "is_test_related": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "source_name": "dependency_analyzer/core.py",
+      "target_name": "dependency_analyzer/import_resolver.py",
+      "source_folder": "dependency_analyzer",
+      "target_folder": "dependency_analyzer",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "source_name": "dependency_analyzer/core.py",
+      "target_name": "dependency_analyzer/metrics.py",
+      "source_folder": "dependency_analyzer",
+      "target_folder": "dependency_analyzer",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 17,
+      "target": 14,
+      "source_name": "dependency_analyzer/__init__.py",
+      "target_name": "dependency_analyzer/core.py",
+      "source_folder": "dependency_analyzer",
+      "target_folder": "dependency_analyzer",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 20,
+      "target": 19,
+      "source_name": "graph_controls/__init__.py",
+      "target_name": "graph_controls/ui_controls.py",
+      "source_folder": "graph_controls",
+      "target_folder": "graph_controls",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 20,
+      "target": 18,
+      "source_name": "graph_controls/__init__.py",
+      "target_name": "graph_controls/event_handlers.py",
+      "source_folder": "graph_controls",
+      "target_folder": "graph_controls",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 23,
+      "target": 21,
+      "source_name": "graph_styles/__init__.py",
+      "target_name": "graph_styles/base_styles.py",
+      "source_folder": "graph_styles",
+      "target_folder": "graph_styles",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 23,
+      "target": 22,
+      "source_name": "graph_styles/__init__.py",
+      "target_name": "graph_styles/layout_styles.py",
+      "source_folder": "graph_styles",
+      "target_folder": "graph_styles",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 26,
+      "target": 21,
+      "source_name": "graph_styles_internal/__init__.py",
+      "target_name": "graph_styles/base_styles.py",
+      "source_folder": "graph_styles_internal",
+      "target_folder": "graph_styles",
+      "is_cross_folder": true,
+      "is_test_related": false
+    },
+    {
+      "source": 26,
+      "target": 22,
+      "source_name": "graph_styles_internal/__init__.py",
+      "target_name": "graph_styles/layout_styles.py",
+      "source_folder": "graph_styles_internal",
+      "target_folder": "graph_styles",
+      "is_cross_folder": true,
+      "is_test_related": false
+    },
+    {
+      "source": 31,
+      "target": 14,
+      "source_name": "graph_visualization/__init__.py",
+      "target_name": "dependency_analyzer/core.py",
+      "source_folder": "graph_visualization",
+      "target_folder": "dependency_analyzer",
+      "is_cross_folder": true,
+      "is_test_related": false
+    },
+    {
+      "source": 31,
+      "target": 29,
+      "source_name": "graph_visualization/__init__.py",
+      "target_name": "graph_visualization/layouts.py",
+      "source_folder": "graph_visualization",
+      "target_folder": "graph_visualization",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 31,
+      "target": 28,
+      "source_name": "graph_visualization/__init__.py",
+      "target_name": "graph_visualization/interactions.py",
+      "source_folder": "graph_visualization",
+      "target_folder": "graph_visualization",
+      "is_cross_folder": false,
+      "is_test_related": false
+    },
+    {
+      "source": 31,
+      "target": 30,
+      "source_name": "graph_visualization/__init__.py",
+      "target_name": "graph_visualization/rendering.py",
+      "source_folder": "graph_visualization",
+      "target_folder": "graph_visualization",
+      "is_cross_folder": false,
+      "is_test_related": false
+    }
+  ],
+  "dependencies": {
+    "dependency_analyzer.py": {
+      "file_path": "dependency_analyzer.py",
+      "folder": "root",
+      "stem": "dependency_analyzer",
+      "display_name": "dependency_analyzer",
+      "imports": [
+        "dependency_analyzer.py"
+      ],
+      "all_imports": [
+        "dependency_analyzer"
+      ],
+      "imports_count": 1,
+      "internal_imports_count": 1,
+      "is_test": false,
+      "is_init": false,
+      "size": 2507
+    },
+    "dependency_analyzer_new.py": {
+      "file_path": "dependency_analyzer_new.py",
+      "folder": "root",
+      "stem": "dependency_analyzer_new",
+      "display_name": "dependency_analyzer_new",
+      "imports": [
+        "dependency_analyzer.py"
+      ],
+      "all_imports": [
+        "dependency_analyzer"
+      ],
+      "imports_count": 1,
+      "internal_imports_count": 1,
+      "is_test": false,
+      "is_init": false,
+      "size": 2507
+    },
+    "force_directed_layout.py": {
+      "file_path": "force_directed_layout.py",
+      "folder": "root",
+      "stem": "force_directed_layout",
+      "display_name": "force_directed_layout",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 11297
+    },
+    "git_analysis.py": {
+      "file_path": "git_analysis.py",
+      "folder": "root",
+      "stem": "git_analysis",
+      "display_name": "git_analysis",
+      "imports": [],
+      "all_imports": [
+        "subprocess",
+        "datetime",
+        "pathlib",
+        "typing"
+      ],
+      "imports_count": 4,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 13793
+    },
+    "graph_controls.py": {
+      "file_path": "graph_controls.py",
+      "folder": "root",
+      "stem": "graph_controls",
+      "display_name": "graph_controls",
+      "imports": [
+        "graph_controls.py"
+      ],
+      "all_imports": [
+        "graph_controls"
+      ],
+      "imports_count": 1,
+      "internal_imports_count": 1,
+      "is_test": false,
+      "is_init": false,
+      "size": 518
+    },
+    "graph_controls_new.py": {
+      "file_path": "graph_controls_new.py",
+      "folder": "root",
+      "stem": "graph_controls_new",
+      "display_name": "graph_controls_new",
+      "imports": [
+        "graph_controls.py"
+      ],
+      "all_imports": [
+        "graph_controls"
+      ],
+      "imports_count": 1,
+      "internal_imports_count": 1,
+      "is_test": false,
+      "is_init": false,
+      "size": 518
+    },
+    "graph_styles.py": {
+      "file_path": "graph_styles.py",
+      "folder": "root",
+      "stem": "graph_styles",
+      "display_name": "graph_styles",
+      "imports": [
+        "graph_styles_internal/__init__.py",
+        "graph_styles_internal/__init__.py"
+      ],
+      "all_imports": [
+        "graph_styles_internal",
+        "graph_styles_internal"
+      ],
+      "imports_count": 2,
+      "internal_imports_count": 2,
+      "is_test": false,
+      "is_init": false,
+      "size": 1479
+    },
+    "graph_styles_backup.py": {
+      "file_path": "graph_styles_backup.py",
+      "folder": "root",
+      "stem": "graph_styles_backup",
+      "display_name": "graph_styles_backup",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 20518
+    },
+    "graph_styles_new.py": {
+      "file_path": "graph_styles_new.py",
+      "folder": "root",
+      "stem": "graph_styles_new",
+      "display_name": "graph_styles_new",
+      "imports": [
+        "graph_styles.py",
+        "graph_styles.py"
+      ],
+      "all_imports": [
+        "graph_styles",
+        "graph_styles"
+      ],
+      "imports_count": 2,
+      "internal_imports_count": 2,
+      "is_test": false,
+      "is_init": false,
+      "size": 1204
+    },
+    "graph_visualization.py": {
+      "file_path": "graph_visualization.py",
+      "folder": "root",
+      "stem": "graph_visualization",
+      "display_name": "graph_visualization",
+      "imports": [
+        "graph_visualization.py"
+      ],
+      "all_imports": [
+        "graph_visualization"
+      ],
+      "imports_count": 1,
+      "internal_imports_count": 1,
+      "is_test": false,
+      "is_init": false,
+      "size": 537
+    },
+    "graph_visualization_new.py": {
+      "file_path": "graph_visualization_new.py",
+      "folder": "root",
+      "stem": "graph_visualization_new",
+      "display_name": "graph_visualization_new",
+      "imports": [
+        "graph_visualization.py"
+      ],
+      "all_imports": [
+        "graph_visualization"
+      ],
+      "imports_count": 1,
+      "internal_imports_count": 1,
+      "is_test": false,
+      "is_init": false,
+      "size": 537
+    },
+    "hierarchical_layout.py": {
+      "file_path": "hierarchical_layout.py",
+      "folder": "root",
+      "stem": "hierarchical_layout",
+      "display_name": "hierarchical_layout",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 9703
+    },
+    "html_generator.py": {
+      "file_path": "html_generator.py",
+      "folder": "root",
+      "stem": "html_generator",
+      "display_name": "html_generator",
+      "imports": [
+        "graph_styles.py",
+        "graph_visualization.py",
+        "hierarchical_layout.py",
+        "force_directed_layout.py",
+        "graph_controls.py",
+        "dependency_analyzer.py"
+      ],
+      "all_imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "graph_styles",
+        "graph_visualization",
+        "hierarchical_layout",
+        "force_directed_layout",
+        "graph_controls",
+        "dependency_analyzer"
+      ],
+      "imports_count": 9,
+      "internal_imports_count": 6,
+      "is_test": false,
+      "is_init": false,
+      "size": 15055
+    },
+    "__init__.py": {
+      "file_path": "__init__.py",
+      "folder": "root",
+      "stem": "__init__",
+      "display_name": "__init__",
+      "imports": [
+        "dependency_analyzer.py",
+        "html_generator.py"
+      ],
+      "all_imports": [
+        "dependency_analyzer",
+        "html_generator"
+      ],
+      "imports_count": 2,
+      "internal_imports_count": 2,
+      "is_test": false,
+      "is_init": true,
+      "size": 1011
+    },
+    "dependency_analyzer/core.py": {
+      "file_path": "dependency_analyzer\\core.py",
+      "folder": "dependency_analyzer",
+      "stem": "core",
+      "display_name": "dependency_analyzer/core",
+      "imports": [
+        "git_analysis.py",
+        "dependency_analyzer/import_resolver.py",
+        "dependency_analyzer/metrics.py"
+      ],
+      "all_imports": [
+        "ast",
+        "os",
+        "pathlib",
+        "typing",
+        "git_analysis",
+        "import_resolver",
+        "metrics"
+      ],
+      "imports_count": 7,
+      "internal_imports_count": 3,
+      "is_test": false,
+      "is_init": false,
+      "size": 16116
+    },
+    "dependency_analyzer/import_resolver.py": {
+      "file_path": "dependency_analyzer\\import_resolver.py",
+      "folder": "dependency_analyzer",
+      "stem": "import_resolver",
+      "display_name": "dependency_analyzer/import_resolver",
+      "imports": [],
+      "all_imports": [
+        "ast",
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "imports_count": 4,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 4759
+    },
+    "dependency_analyzer/metrics.py": {
+      "file_path": "dependency_analyzer\\metrics.py",
+      "folder": "dependency_analyzer",
+      "stem": "metrics",
+      "display_name": "dependency_analyzer/metrics",
+      "imports": [],
+      "all_imports": [
+        "re",
+        "pathlib",
+        "typing"
+      ],
+      "imports_count": 3,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 7623
+    },
+    "dependency_analyzer/__init__.py": {
+      "file_path": "dependency_analyzer\\__init__.py",
+      "folder": "dependency_analyzer",
+      "stem": "__init__",
+      "display_name": "dependency_analyzer/__init__",
+      "imports": [
+        "dependency_analyzer/core.py"
+      ],
+      "all_imports": [
+        "core"
+      ],
+      "imports_count": 1,
+      "internal_imports_count": 1,
+      "is_test": false,
+      "is_init": true,
+      "size": 574
+    },
+    "graph_controls/event_handlers.py": {
+      "file_path": "graph_controls\\event_handlers.py",
+      "folder": "graph_controls",
+      "stem": "event_handlers",
+      "display_name": "graph_controls/event_handlers",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 10575
+    },
+    "graph_controls/ui_controls.py": {
+      "file_path": "graph_controls\\ui_controls.py",
+      "folder": "graph_controls",
+      "stem": "ui_controls",
+      "display_name": "graph_controls/ui_controls",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 10845
+    },
+    "graph_controls/__init__.py": {
+      "file_path": "graph_controls\\__init__.py",
+      "folder": "graph_controls",
+      "stem": "__init__",
+      "display_name": "graph_controls/__init__",
+      "imports": [
+        "graph_controls/ui_controls.py",
+        "graph_controls/event_handlers.py"
+      ],
+      "all_imports": [
+        "ui_controls",
+        "event_handlers"
+      ],
+      "imports_count": 2,
+      "internal_imports_count": 2,
+      "is_test": false,
+      "is_init": true,
+      "size": 1374
+    },
+    "graph_styles/base_styles.py": {
+      "file_path": "graph_styles\\base_styles.py",
+      "folder": "graph_styles",
+      "stem": "base_styles",
+      "display_name": "graph_styles/base_styles",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 9750
+    },
+    "graph_styles/layout_styles.py": {
+      "file_path": "graph_styles\\layout_styles.py",
+      "folder": "graph_styles",
+      "stem": "layout_styles",
+      "display_name": "graph_styles/layout_styles",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 14657
+    },
+    "graph_styles/__init__.py": {
+      "file_path": "graph_styles\\__init__.py",
+      "folder": "graph_styles",
+      "stem": "__init__",
+      "display_name": "graph_styles/__init__",
+      "imports": [
+        "graph_styles/base_styles.py",
+        "graph_styles/layout_styles.py"
+      ],
+      "all_imports": [
+        "base_styles",
+        "layout_styles"
+      ],
+      "imports_count": 2,
+      "internal_imports_count": 2,
+      "is_test": false,
+      "is_init": true,
+      "size": 1325
+    },
+    "graph_styles_internal/base_styles.py": {
+      "file_path": "graph_styles_internal\\base_styles.py",
+      "folder": "graph_styles_internal",
+      "stem": "base_styles",
+      "display_name": "graph_styles_internal/base_styles",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 9750
+    },
+    "graph_styles_internal/layout_styles.py": {
+      "file_path": "graph_styles_internal\\layout_styles.py",
+      "folder": "graph_styles_internal",
+      "stem": "layout_styles",
+      "display_name": "graph_styles_internal/layout_styles",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 14657
+    },
+    "graph_styles_internal/__init__.py": {
+      "file_path": "graph_styles_internal\\__init__.py",
+      "folder": "graph_styles_internal",
+      "stem": "__init__",
+      "display_name": "graph_styles_internal/__init__",
+      "imports": [
+        "graph_styles/base_styles.py",
+        "graph_styles/layout_styles.py"
+      ],
+      "all_imports": [
+        "base_styles",
+        "layout_styles"
+      ],
+      "imports_count": 2,
+      "internal_imports_count": 2,
+      "is_test": false,
+      "is_init": true,
+      "size": 1102
+    },
+    "graph_visualization/core.py": {
+      "file_path": "graph_visualization\\core.py",
+      "folder": "graph_visualization",
+      "stem": "core",
+      "display_name": "graph_visualization/core",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 8621
+    },
+    "graph_visualization/interactions.py": {
+      "file_path": "graph_visualization\\interactions.py",
+      "folder": "graph_visualization",
+      "stem": "interactions",
+      "display_name": "graph_visualization/interactions",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 13889
+    },
+    "graph_visualization/layouts.py": {
+      "file_path": "graph_visualization\\layouts.py",
+      "folder": "graph_visualization",
+      "stem": "layouts",
+      "display_name": "graph_visualization/layouts",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 11407
+    },
+    "graph_visualization/rendering.py": {
+      "file_path": "graph_visualization\\rendering.py",
+      "folder": "graph_visualization",
+      "stem": "rendering",
+      "display_name": "graph_visualization/rendering",
+      "imports": [],
+      "all_imports": [],
+      "imports_count": 0,
+      "internal_imports_count": 0,
+      "is_test": false,
+      "is_init": false,
+      "size": 10184
+    },
+    "graph_visualization/__init__.py": {
+      "file_path": "graph_visualization\\__init__.py",
+      "folder": "graph_visualization",
+      "stem": "__init__",
+      "display_name": "graph_visualization/__init__",
+      "imports": [
+        "dependency_analyzer/core.py",
+        "graph_visualization/layouts.py",
+        "graph_visualization/interactions.py",
+        "graph_visualization/rendering.py"
+      ],
+      "all_imports": [
+        "core",
+        "layouts",
+        "interactions",
+        "rendering"
+      ],
+      "imports_count": 4,
+      "internal_imports_count": 4,
+      "is_test": false,
+      "is_init": true,
+      "size": 1451
+    }
+  },
+  "subfolder_info": {
+    "dependency_analyzer": {
+      "color": "#FF6B6B",
+      "modules": [
+        "dependency_analyzer/core",
+        "dependency_analyzer/import_resolver",
+        "dependency_analyzer/metrics",
+        "dependency_analyzer/__init__"
+      ],
+      "test_modules": [],
+      "count": 4
+    },
+    "graph_controls": {
+      "color": "#4ECDC4",
+      "modules": [
+        "graph_controls/event_handlers",
+        "graph_controls/ui_controls",
+        "graph_controls/__init__"
+      ],
+      "test_modules": [],
+      "count": 3
+    },
+    "graph_styles": {
+      "color": "#45B7D1",
+      "modules": [
+        "graph_styles/base_styles",
+        "graph_styles/layout_styles",
+        "graph_styles/__init__"
+      ],
+      "test_modules": [],
+      "count": 3
+    },
+    "graph_styles_internal": {
+      "color": "#96CEB4",
+      "modules": [
+        "graph_styles_internal/base_styles",
+        "graph_styles_internal/layout_styles",
+        "graph_styles_internal/__init__"
+      ],
+      "test_modules": [],
+      "count": 3
+    },
+    "graph_visualization": {
+      "color": "#FFEAA7",
+      "modules": [
+        "graph_visualization/core",
+        "graph_visualization/interactions",
+        "graph_visualization/layouts",
+        "graph_visualization/rendering",
+        "graph_visualization/__init__"
+      ],
+      "test_modules": [],
+      "count": 5
+    },
+    "root": {
+      "color": "#DDA0DD",
+      "modules": [
+        "dependency_analyzer",
+        "dependency_analyzer_new",
+        "force_directed_layout",
+        "git_analysis",
+        "graph_controls",
+        "graph_controls_new",
+        "graph_styles",
+        "graph_styles_backup",
+        "graph_styles_new",
+        "graph_visualization",
+        "graph_visualization_new",
+        "hierarchical_layout",
+        "html_generator",
+        "__init__"
+      ],
+      "test_modules": [],
+      "count": 14
+    }
+  },
+  "importance_scores": {
+    "dependency_analyzer.py": 1.0,
+    "dependency_analyzer_new.py": 0.06056018168054505,
+    "force_directed_layout.py": 0.07278576835730508,
+    "git_analysis.py": 0.09595003785011355,
+    "graph_controls.py": 0.8284128185717887,
+    "graph_controls_new.py": 0.06056018168054505,
+    "graph_styles.py": 0.09852384557153672,
+    "graph_styles_backup.py": 0.06056018168054505,
+    "graph_styles_new.py": 0.06056018168054505,
+    "graph_visualization.py": 0.8284128185717887,
+    "graph_visualization_new.py": 0.06056018168054505,
+    "hierarchical_layout.py": 0.07278576835730508,
+    "html_generator.py": 0.08629825889477669,
+    "__init__.py": 0.06056018168054505,
+    "dependency_analyzer/core.py": 0.12490537471612415,
+    "dependency_analyzer/import_resolver.py": 0.09595003785011355,
+    "dependency_analyzer/metrics.py": 0.09595003785011355,
+    "dependency_analyzer/__init__.py": 0.06056018168054505,
+    "graph_controls/event_handlers.py": 0.08629825889477669,
+    "graph_controls/ui_controls.py": 0.08629825889477669,
+    "graph_controls/__init__.py": 0.06056018168054505,
+    "graph_styles/base_styles.py": 0.12983220571536716,
+    "graph_styles/layout_styles.py": 0.12983220571536716,
+    "graph_styles/__init__.py": 0.06056018168054505,
+    "graph_styles_internal/base_styles.py": 0.06056018168054505,
+    "graph_styles_internal/layout_styles.py": 0.06056018168054505,
+    "graph_styles_internal/__init__.py": 0.10243281604844816,
+    "graph_visualization/core.py": 0.06056018168054505,
+    "graph_visualization/interactions.py": 0.07342922028766086,
+    "graph_visualization/layouts.py": 0.07342922028766086,
+    "graph_visualization/rendering.py": 0.07342922028766086,
+    "graph_visualization/__init__.py": 0.06056018168054505
+  },
+  "git_analysis": {
+    "total_files_analyzed": 54,
+    "analysis_period_days": 30,
+    "git_available": true,
+    "hotspots": [
+      {
+        "file_path": "graph_modules/dependency_analyzer.py",
+        "hotspot_score": 0.804,
+        "change_count": 4,
+        "total_churn": 1441,
+        "classification": "hotspot"
+      },
+      {
+        "file_path": "graph_modules/graph_styles.py",
+        "hotspot_score": 0.804,
+        "change_count": 4,
+        "total_churn": 1422,
+        "classification": "hotspot"
+      },
+      {
+        "file_path": "graph_modules/graph_visualization.py",
+        "hotspot_score": 0.804,
+        "change_count": 4,
+        "total_churn": 1972,
+        "classification": "hotspot"
+      },
+      {
+        "file_path": "graph_modules/graph_controls.py",
+        "hotspot_score": 0.6683999999999999,
+        "change_count": 3,
+        "total_churn": 968,
+        "classification": "hotspot"
+      }
+    ],
+    "stable_files": [],
+    "file_data": {
+      "test_imports_and_performance.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 16:52:08 +0100",
+        "first_modified": "2025-07-23 16:52:08 +0100",
+        "commits": [
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/graph_visualization/rendering.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 226,
+        "total_deletions": 0,
+        "total_churn": 226,
+        "commit_count": 1,
+        "avg_churn_per_commit": 226.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1938
+      },
+      "test_implementation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/dependency_analyzer/core.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 392,
+        "total_deletions": 0,
+        "total_churn": 392,
+        "commit_count": 1,
+        "avg_churn_per_commit": 392.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.24359999999999998
+      },
+      "graph_modules/graph_controls.py": {
+        "change_count": 3,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          },
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.5399999999999999,
+        "change_classification": "high",
+        "total_additions": 492,
+        "total_deletions": 476,
+        "total_churn": 968,
+        "commit_count": 3,
+        "avg_churn_per_commit": 322.6666666666667,
+        "churn_classification": "high",
+        "hotspot_score": 0.6683999999999999
+      },
+      "final_verification.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "debug_force_layout.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/graph_styles_internal/layout_styles.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 554,
+        "total_deletions": 0,
+        "total_churn": 554,
+        "commit_count": 1,
+        "avg_churn_per_commit": 554.0,
+        "churn_classification": "high",
+        "hotspot_score": 0.2922
+      },
+      "import_resolution_test.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/graph_visualization/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 44,
+        "total_deletions": 0,
+        "total_churn": 44,
+        "commit_count": 1,
+        "avg_churn_per_commit": 44.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1392
+      },
+      "graph_modules/graph_styles/layout_styles.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 554,
+        "total_deletions": 0,
+        "total_churn": 554,
+        "commit_count": 1,
+        "avg_churn_per_commit": 554.0,
+        "churn_classification": "high",
+        "hotspot_score": 0.2922
+      },
+      "graph_modules/graph_visualization_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 16,
+        "total_deletions": 0,
+        "total_churn": 16,
+        "commit_count": 1,
+        "avg_churn_per_commit": 16.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1308
+      },
+      "graph_modules/html_generator.py": {
+        "change_count": 2,
+        "last_modified": "2025-07-23 15:10:10 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.36,
+        "change_classification": "medium",
+        "total_additions": 372,
+        "total_deletions": 0,
+        "total_churn": 372,
+        "commit_count": 2,
+        "avg_churn_per_commit": 186.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.3636
+      },
+      "graph_modules/dependency_analyzer/import_resolver.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 132,
+        "total_deletions": 0,
+        "total_churn": 132,
+        "commit_count": 1,
+        "avg_churn_per_commit": 132.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1656
+      },
+      "graph_modules/graph_styles_backup.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 670,
+        "total_deletions": 0,
+        "total_churn": 670,
+        "commit_count": 1,
+        "avg_churn_per_commit": 670.0,
+        "churn_classification": "high",
+        "hotspot_score": 0.327
+      },
+      "test_dependency_analyzer_refactor.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "batch_2_validation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/graph_visualization/layouts.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 249,
+        "total_deletions": 0,
+        "total_churn": 249,
+        "commit_count": 1,
+        "avg_churn_per_commit": 249.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.2007
+      },
+      "final_feature_validation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 16:52:08 +0100",
+        "first_modified": "2025-07-23 16:52:08 +0100",
+        "commits": [
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "test_all_fixes.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/dependency_analyzer.py": {
+        "change_count": 4,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          },
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          },
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.72,
+        "change_classification": "very_high",
+        "total_additions": 746,
+        "total_deletions": 695,
+        "total_churn": 1441,
+        "commit_count": 4,
+        "avg_churn_per_commit": 360.25,
+        "churn_classification": "very_high",
+        "hotspot_score": 0.804
+      },
+      "final_refactoring_validation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/force_directed_layout.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 268,
+        "total_deletions": 0,
+        "total_churn": 268,
+        "commit_count": 1,
+        "avg_churn_per_commit": 268.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.2064
+      },
+      "graph_modules/dependency_analyzer/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 18,
+        "total_deletions": 0,
+        "total_churn": 18,
+        "commit_count": 1,
+        "avg_churn_per_commit": 18.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1314
+      },
+      "graph_modules/graph_styles.py": {
+        "change_count": 4,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          },
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          },
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.72,
+        "change_classification": "very_high",
+        "total_additions": 736,
+        "total_deletions": 686,
+        "total_churn": 1422,
+        "commit_count": 4,
+        "avg_churn_per_commit": 355.5,
+        "churn_classification": "very_high",
+        "hotspot_score": 0.804
+      },
+      "comprehensive_test.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "analyze_project_maximums.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/dependency_analyzer/metrics.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 225,
+        "total_deletions": 0,
+        "total_churn": 225,
+        "commit_count": 1,
+        "avg_churn_per_commit": 225.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1935
+      },
+      "graph_modules/graph_controls/ui_controls.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 254,
+        "total_deletions": 0,
+        "total_churn": 254,
+        "commit_count": 1,
+        "avg_churn_per_commit": 254.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.2022
+      },
+      "graph_modules/graph_styles/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 48,
+        "total_deletions": 0,
+        "total_churn": 48,
+        "commit_count": 1,
+        "avg_churn_per_commit": 48.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1404
+      },
+      "graph_modules/graph_controls_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 16,
+        "total_deletions": 0,
+        "total_churn": 16,
+        "commit_count": 1,
+        "avg_churn_per_commit": 16.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1308
+      },
+      "graph_modules/graph_visualization.py": {
+        "change_count": 4,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          },
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          },
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.72,
+        "change_classification": "very_high",
+        "total_additions": 994,
+        "total_deletions": 978,
+        "total_churn": 1972,
+        "commit_count": 4,
+        "avg_churn_per_commit": 493.0,
+        "churn_classification": "very_high",
+        "hotspot_score": 0.804
+      },
+      "graph_modules/graph_visualization/interactions.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 290,
+        "total_deletions": 0,
+        "total_churn": 290,
+        "commit_count": 1,
+        "avg_churn_per_commit": 290.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.213
+      },
+      "graph_modules/graph_styles_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 39,
+        "total_deletions": 0,
+        "total_churn": 39,
+        "commit_count": 1,
+        "avg_churn_per_commit": 39.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1377
+      },
+      "debug_visualization_issues.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "enhanced_dependency_graph_modular.py": {
+        "change_count": 2,
+        "last_modified": "2025-07-23 15:10:10 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.36,
+        "change_classification": "medium",
+        "hotspot_score": 0.252
+      },
+      "graph_modules/graph_controls/event_handlers.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 248,
+        "total_deletions": 0,
+        "total_churn": 248,
+        "commit_count": 1,
+        "avg_churn_per_commit": 248.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.2004
+      },
+      "graph_modules/graph_controls/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 47,
+        "total_deletions": 0,
+        "total_churn": 47,
+        "commit_count": 1,
+        "avg_churn_per_commit": 47.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1401
+      },
+      "graph_modules/graph_visualization/core.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 221,
+        "total_deletions": 0,
+        "total_churn": 221,
+        "commit_count": 1,
+        "avg_churn_per_commit": 221.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1923
+      },
+      "validate_latest_fixes.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 16:52:08 +0100",
+        "first_modified": "2025-07-23 16:52:08 +0100",
+        "commits": [
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/graph_styles/base_styles.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 266,
+        "total_deletions": 0,
+        "total_churn": 266,
+        "commit_count": 1,
+        "avg_churn_per_commit": 266.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.20579999999999998
+      },
+      "test_graph_visualization_refactor.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "test_graph_styles_refactoring.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "verify_improvements.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 15:10:10 +0100",
+        "first_modified": "2025-07-23 15:10:10 +0100",
+        "commits": [
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "graph_modules/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 29,
+        "total_deletions": 0,
+        "total_churn": 29,
+        "commit_count": 1,
+        "avg_churn_per_commit": 29.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1347
+      },
+      "graph_modules/git_analysis.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 389,
+        "total_deletions": 0,
+        "total_churn": 389,
+        "commit_count": 1,
+        "avg_churn_per_commit": 389.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.2427
+      },
+      "graph_modules/hierarchical_layout.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 220,
+        "total_deletions": 0,
+        "total_churn": 220,
+        "commit_count": 1,
+        "avg_churn_per_commit": 220.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.192
+      },
+      "graph_modules/graph_styles_internal/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 48,
+        "total_deletions": 0,
+        "total_churn": 48,
+        "commit_count": 1,
+        "avg_churn_per_commit": 48.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1404
+      },
+      "graph_modules/dependency_analyzer_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 51,
+        "total_deletions": 0,
+        "total_churn": 51,
+        "commit_count": 1,
+        "avg_churn_per_commit": 51.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1413
+      },
+      "graph_modules/graph_styles_internal/base_styles.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "total_additions": 266,
+        "total_deletions": 0,
+        "total_churn": 266,
+        "commit_count": 1,
+        "avg_churn_per_commit": 266.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.20579999999999998
+      },
+      "validate_fixes.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 15:10:10 +0100",
+        "first_modified": "2025-07-23 15:10:10 +0100",
+        "commits": [
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "test_current_state.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "validate_all_fixes.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      },
+      "test_graph_controls_refactor.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.18,
+        "change_classification": "low",
+        "hotspot_score": 0.126
+      }
+    }
+  },
+  "statistics": {
+    "total_files": 32,
+    "total_dependencies": 32,
+    "cross_folder_dependencies": 6,
+    "test_files": 0,
+    "folders": 6,
+    "git_analysis_available": true,
+    "hotspots_detected": 4,
+    "stable_files_detected": 0
+  }
+}

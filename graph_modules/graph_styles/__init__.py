@@ -39,10 +39,21 @@ def get_css_styles() -> str:
     return get_styles()
 
 
+def get_graph_styles() -> str:
+    """
+    Another legacy function name for backward compatibility.
+
+    Returns:
+        str: Complete CSS styles for the dependency graph
+    """
+    return get_styles()
+
+
 # Export all functions for backward compatibility
 __all__ = [
     "get_styles",
     "get_css_styles",
+    "get_graph_styles",
     "get_base_styles_css",
     "get_layout_styles_css",
 ]
