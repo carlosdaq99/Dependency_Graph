@@ -40,9 +40,6 @@ def get_interactions_visualization_js() -> str:
                                   d.importance > 0.5 ? "Medium" : 
                                   d.importance > 0.3 ? "Low" : "Minimal";
             
-            // Tooltip positioning logic with edge detection
-            const horizontalOffset = 10; // Change this value to adjust horizontal distance from cursor
-            const verticalOffset = 16;
             tooltip.style("opacity", 1)
                 .attr("aria-hidden", "false")
                 .html(`
@@ -53,26 +50,9 @@ def get_interactions_visualization_js() -> str:
                     <strong>Successors:</strong> ${successors} ${successorNames ? `<span style='color:#888'>[${successorNames}]</span>` : ''}<br/>
                     <strong>File Size:</strong> ${(d.size / 1024).toFixed(1)}KB<br/>
                     ${d.is_test ? "<strong>Type:</strong> Test File<br/>" : ""}
-                `);
-            // Get tooltip dimensions
-            const tooltipNode = tooltip.node();
-            const tooltipWidth = tooltipNode ? tooltipNode.offsetWidth : 200;
-            const tooltipHeight = tooltipNode ? tooltipNode.offsetHeight : 60;
-            let left = event.pageX + horizontalOffset;
-            let top = event.pageY + verticalOffset;
-            // Prevent overflow right
-            if (left + tooltipWidth > window.innerWidth) {
-                left = event.pageX - tooltipWidth - horizontalOffset;
-            }
-            // Prevent overflow bottom
-            if (top + tooltipHeight > window.innerHeight) {
-                top = event.pageY - tooltipHeight - verticalOffset;
-            }
-            // Prevent negative positions
-            left = Math.max(0, left);
-            top = Math.max(0, top);
-            tooltip.style("left", left + "px")
-                   .style("top", top + "px");
+                `)
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 10) + "px");
         }
         
         function handleEnhancedMouseOut() {
@@ -123,23 +103,16 @@ def get_interactions_visualization_js() -> str:
                         return !allReachable.has(nodeData.id);
                     });
                 
-                // Highlight edges - ENHANCED: Support mixed-category edges
+                // Highlight edges - FIXED: Only highlight edges between highlighted nodes
                 window.graphElements.link
                     .classed("highlighted", d => directConnected.has(d.source_name) && directConnected.has(d.target_name))
                     .classed("path-highlighted", d => pathConnected.has(d.source_name) && pathConnected.has(d.target_name))
-                    .classed("mixed-highlighted", d => 
-                        (directConnected.has(d.source_name) && pathConnected.has(d.target_name)) ||
-                        (pathConnected.has(d.source_name) && directConnected.has(d.target_name))
-                    )
                     .classed("dimmed", d => !(allReachable.has(d.source_name) && allReachable.has(d.target_name)))
                     .attr("marker-end", d => {
                         if (directConnected.has(d.source_name) && directConnected.has(d.target_name)) {
                             return "url(#arrowhead-highlighted)";
                         } else if (pathConnected.has(d.source_name) && pathConnected.has(d.target_name)) {
                             return "url(#arrowhead-path)";
-                        } else if ((directConnected.has(d.source_name) && pathConnected.has(d.target_name)) ||
-                                   (pathConnected.has(d.source_name) && directConnected.has(d.target_name))) {
-                            return "url(#arrowhead-mixed)";
                         } else if (!(allReachable.has(d.source_name) && allReachable.has(d.target_name))) {
                             return "url(#arrowhead-dimmed)";
                         } else {
@@ -269,9 +242,8 @@ def get_interactions_visualization_js() -> str:
             window.graphElements.node.classed("dimmed highlighted path-highlighted", false);
             window.graphElements.node.selectAll(".node-rect, .node-circle").classed("dimmed highlighted path-highlighted", false);
             window.graphElements.node.selectAll(".node-label").classed("dimmed", false);
-            // Also remove mixed-highlighted from edges
             window.graphElements.link
-                .classed("dimmed highlighted path-highlighted mixed-highlighted", false)
+                .classed("dimmed highlighted path-highlighted", false)
                 .attr("marker-end", "url(#arrowhead)");
         }
         

@@ -5,7 +5,7 @@
       "name": "dependency_analyzer",
       "stem": "dependency_analyzer",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "dependency_analyzer.py",
       "imports_count": 1,
       "importance": 1.0,
@@ -29,46 +29,18 @@
       "max_nesting_depth": 1
     },
     {
-      "id": "dependency_analyzer_new.py",
-      "name": "dependency_analyzer_new",
-      "stem": "dependency_analyzer_new",
-      "folder": "root",
-      "color": "#DDA0DD",
-      "file_path": "dependency_analyzer_new.py",
-      "imports_count": 1,
-      "importance": 0.06056018168054505,
-      "is_test": false,
-      "is_init": false,
-      "size": 2507,
-      "index": 1,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.1187421875,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 30,
-      "total_lines": 52,
-      "function_count": 0,
-      "heavy_operations": 0,
-      "max_nesting_depth": 1
-    },
-    {
       "id": "force_directed_layout.py",
       "name": "force_directed_layout",
       "stem": "force_directed_layout",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "force_directed_layout.py",
       "imports_count": 0,
-      "importance": 0.07278576835730508,
+      "importance": 0.11081444487130238,
       "is_test": false,
       "is_init": false,
       "size": 11297,
-      "index": 2,
+      "index": 1,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -89,14 +61,14 @@
       "name": "git_analysis",
       "stem": "git_analysis",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "git_analysis.py",
       "imports_count": 0,
-      "importance": 0.09595003785011355,
+      "importance": 0.14608144448713029,
       "is_test": false,
       "is_init": false,
       "size": 13793,
-      "index": 3,
+      "index": 2,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -117,42 +89,14 @@
       "name": "graph_controls",
       "stem": "graph_controls",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "graph_controls.py",
       "imports_count": 1,
-      "importance": 0.8284128185717887,
+      "importance": 0.7387629658086824,
       "is_test": false,
       "is_init": false,
       "size": 518,
-      "index": 4,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.0448359375,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 8,
-      "total_lines": 17,
-      "function_count": 0,
-      "heavy_operations": 0,
-      "max_nesting_depth": 1
-    },
-    {
-      "id": "graph_controls_new.py",
-      "name": "graph_controls_new",
-      "stem": "graph_controls_new",
-      "folder": "root",
-      "color": "#DDA0DD",
-      "file_path": "graph_controls_new.py",
-      "imports_count": 1,
-      "importance": 0.06056018168054505,
-      "is_test": false,
-      "is_init": false,
-      "size": 518,
-      "index": 5,
+      "index": 3,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -173,14 +117,14 @@
       "name": "graph_styles",
       "stem": "graph_styles",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "graph_styles.py",
-      "imports_count": 2,
-      "importance": 0.09852384557153672,
+      "imports_count": 0,
+      "importance": 0.11081444487130238,
       "is_test": false,
       "is_init": false,
       "size": 1479,
-      "index": 6,
+      "index": 4,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -197,102 +141,18 @@
       "max_nesting_depth": 3
     },
     {
-      "id": "graph_styles_backup.py",
-      "name": "graph_styles_backup",
-      "stem": "graph_styles_backup",
-      "folder": "root",
-      "color": "#DDA0DD",
-      "file_path": "graph_styles_backup.py",
-      "imports_count": 0,
-      "importance": 0.06056018168054505,
-      "is_test": false,
-      "is_init": false,
-      "size": 20518,
-      "index": 7,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.377765625,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 70,
-      "total_lines": 671,
-      "function_count": 2,
-      "heavy_operations": 0,
-      "max_nesting_depth": 4
-    },
-    {
-      "id": "graph_styles_new.py",
-      "name": "graph_styles_new",
-      "stem": "graph_styles_new",
-      "folder": "root",
-      "color": "#DDA0DD",
-      "file_path": "graph_styles_new.py",
-      "imports_count": 2,
-      "importance": 0.06056018168054505,
-      "is_test": false,
-      "is_init": false,
-      "size": 1204,
-      "index": 8,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.11010546874999999,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 13,
-      "total_lines": 40,
-      "function_count": 2,
-      "heavy_operations": 0,
-      "max_nesting_depth": 3
-    },
-    {
       "id": "graph_visualization.py",
       "name": "graph_visualization",
       "stem": "graph_visualization",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "graph_visualization.py",
       "imports_count": 1,
-      "importance": 0.8284128185717887,
+      "importance": 0.7387629658086824,
       "is_test": false,
       "is_init": false,
       "size": 537,
-      "index": 9,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.04491015625,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 8,
-      "total_lines": 17,
-      "function_count": 0,
-      "heavy_operations": 0,
-      "max_nesting_depth": 1
-    },
-    {
-      "id": "graph_visualization_new.py",
-      "name": "graph_visualization_new",
-      "stem": "graph_visualization_new",
-      "folder": "root",
-      "color": "#DDA0DD",
-      "file_path": "graph_visualization_new.py",
-      "imports_count": 1,
-      "importance": 0.06056018168054505,
-      "is_test": false,
-      "is_init": false,
-      "size": 537,
-      "index": 10,
+      "index": 5,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -313,14 +173,14 @@
       "name": "hierarchical_layout",
       "stem": "hierarchical_layout",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "hierarchical_layout.py",
       "imports_count": 0,
-      "importance": 0.07278576835730508,
+      "importance": 0.11081444487130238,
       "is_test": false,
       "is_init": false,
       "size": 9703,
-      "index": 11,
+      "index": 6,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -341,14 +201,14 @@
       "name": "html_generator",
       "stem": "html_generator",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "html_generator.py",
       "imports_count": 6,
-      "importance": 0.08629825889477669,
+      "importance": 0.13138686131386865,
       "is_test": false,
       "is_init": false,
       "size": 15055,
-      "index": 12,
+      "index": 7,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -369,14 +229,14 @@
       "name": "__init__",
       "stem": "__init__",
       "folder": "root",
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "file_path": "__init__.py",
       "imports_count": 2,
-      "importance": 0.06056018168054505,
+      "importance": 0.09220130618517099,
       "is_test": false,
       "is_init": true,
       "size": 1011,
-      "index": 13,
+      "index": 8,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -400,11 +260,11 @@
       "color": "#FF6B6B",
       "file_path": "dependency_analyzer\\core.py",
       "imports_count": 3,
-      "importance": 0.12490537471612415,
+      "importance": 0.19016519400691514,
       "is_test": false,
       "is_init": false,
-      "size": 16116,
-      "index": 14,
+      "size": 16104,
+      "index": 9,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -412,7 +272,7 @@
       "churn_classification": "none",
       "hotspot_score": 0.0,
       "last_modified": "unknown",
-      "performance_score": 0.5970703125,
+      "performance_score": 0.5970234375,
       "is_performance_hotspot": false,
       "cyclomatic_complexity": 108,
       "total_lines": 400,
@@ -428,11 +288,11 @@
       "color": "#FF6B6B",
       "file_path": "dependency_analyzer\\import_resolver.py",
       "imports_count": 0,
-      "importance": 0.09595003785011355,
+      "importance": 0.14608144448713029,
       "is_test": false,
       "is_init": false,
       "size": 4759,
-      "index": 15,
+      "index": 10,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -456,11 +316,11 @@
       "color": "#FF6B6B",
       "file_path": "dependency_analyzer\\metrics.py",
       "imports_count": 0,
-      "importance": 0.09595003785011355,
+      "importance": 0.14608144448713029,
       "is_test": false,
       "is_init": false,
       "size": 7623,
-      "index": 16,
+      "index": 11,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -484,11 +344,11 @@
       "color": "#FF6B6B",
       "file_path": "dependency_analyzer\\__init__.py",
       "imports_count": 1,
-      "importance": 0.06056018168054505,
+      "importance": 0.09220130618517099,
       "is_test": false,
       "is_init": true,
       "size": 574,
-      "index": 17,
+      "index": 12,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -512,11 +372,11 @@
       "color": "#4ECDC4",
       "file_path": "graph_controls\\event_handlers.py",
       "imports_count": 0,
-      "importance": 0.08629825889477669,
+      "importance": 0.13138686131386865,
       "is_test": false,
       "is_init": false,
       "size": 10575,
-      "index": 18,
+      "index": 13,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -540,11 +400,11 @@
       "color": "#4ECDC4",
       "file_path": "graph_controls\\ui_controls.py",
       "imports_count": 0,
-      "importance": 0.08629825889477669,
+      "importance": 0.13138686131386865,
       "is_test": false,
       "is_init": false,
       "size": 10845,
-      "index": 19,
+      "index": 14,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -568,11 +428,11 @@
       "color": "#4ECDC4",
       "file_path": "graph_controls\\__init__.py",
       "imports_count": 2,
-      "importance": 0.06056018168054505,
+      "importance": 0.09220130618517099,
       "is_test": false,
       "is_init": true,
       "size": 1374,
-      "index": 20,
+      "index": 15,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -596,11 +456,11 @@
       "color": "#45B7D1",
       "file_path": "graph_styles\\base_styles.py",
       "imports_count": 0,
-      "importance": 0.12983220571536716,
+      "importance": 0.13138686131386865,
       "is_test": false,
       "is_init": false,
-      "size": 9750,
-      "index": 21,
+      "size": 9834,
+      "index": 16,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -608,10 +468,10 @@
       "churn_classification": "none",
       "hotspot_score": 0.0,
       "last_modified": "unknown",
-      "performance_score": 0.29612499999999997,
+      "performance_score": 0.30245703125,
       "is_performance_hotspot": false,
-      "cyclomatic_complexity": 59,
-      "total_lines": 267,
+      "cyclomatic_complexity": 61,
+      "total_lines": 268,
       "function_count": 1,
       "heavy_operations": 0,
       "max_nesting_depth": 4
@@ -624,11 +484,11 @@
       "color": "#45B7D1",
       "file_path": "graph_styles\\layout_styles.py",
       "imports_count": 0,
-      "importance": 0.12983220571536716,
+      "importance": 0.13138686131386865,
       "is_test": false,
       "is_init": false,
-      "size": 14657,
-      "index": 22,
+      "size": 15588,
+      "index": 17,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -636,10 +496,10 @@
       "churn_classification": "none",
       "hotspot_score": 0.0,
       "last_modified": "unknown",
-      "performance_score": 0.20841796875000002,
+      "performance_score": 0.22715234374999999,
       "is_performance_hotspot": false,
-      "cyclomatic_complexity": 23,
-      "total_lines": 555,
+      "cyclomatic_complexity": 28,
+      "total_lines": 580,
       "function_count": 1,
       "heavy_operations": 0,
       "max_nesting_depth": 4
@@ -652,11 +512,11 @@
       "color": "#45B7D1",
       "file_path": "graph_styles\\__init__.py",
       "imports_count": 2,
-      "importance": 0.06056018168054505,
+      "importance": 0.09220130618517099,
       "is_test": false,
       "is_init": true,
       "size": 1325,
-      "index": 23,
+      "index": 18,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -673,102 +533,18 @@
       "max_nesting_depth": 3
     },
     {
-      "id": "graph_styles_internal/base_styles.py",
-      "name": "graph_styles_internal/base_styles",
-      "stem": "base_styles",
-      "folder": "graph_styles_internal",
-      "color": "#96CEB4",
-      "file_path": "graph_styles_internal\\base_styles.py",
-      "imports_count": 0,
-      "importance": 0.06056018168054505,
-      "is_test": false,
-      "is_init": false,
-      "size": 9750,
-      "index": 24,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.29612499999999997,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 59,
-      "total_lines": 267,
-      "function_count": 1,
-      "heavy_operations": 0,
-      "max_nesting_depth": 4
-    },
-    {
-      "id": "graph_styles_internal/layout_styles.py",
-      "name": "graph_styles_internal/layout_styles",
-      "stem": "layout_styles",
-      "folder": "graph_styles_internal",
-      "color": "#96CEB4",
-      "file_path": "graph_styles_internal\\layout_styles.py",
-      "imports_count": 0,
-      "importance": 0.06056018168054505,
-      "is_test": false,
-      "is_init": false,
-      "size": 14657,
-      "index": 25,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.20841796875000002,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 23,
-      "total_lines": 555,
-      "function_count": 1,
-      "heavy_operations": 0,
-      "max_nesting_depth": 4
-    },
-    {
-      "id": "graph_styles_internal/__init__.py",
-      "name": "graph_styles_internal/__init__",
-      "stem": "__init__",
-      "folder": "graph_styles_internal",
-      "color": "#96CEB4",
-      "file_path": "graph_styles_internal\\__init__.py",
-      "imports_count": 2,
-      "importance": 0.10243281604844816,
-      "is_test": false,
-      "is_init": true,
-      "size": 1102,
-      "index": 26,
-      "change_count": 0,
-      "change_frequency_score": 0.0,
-      "change_classification": "none",
-      "total_churn": 0,
-      "churn_classification": "none",
-      "hotspot_score": 0.0,
-      "last_modified": "unknown",
-      "performance_score": 0.1127421875,
-      "is_performance_hotspot": false,
-      "cyclomatic_complexity": 14,
-      "total_lines": 49,
-      "function_count": 2,
-      "heavy_operations": 0,
-      "max_nesting_depth": 3
-    },
-    {
       "id": "graph_visualization/core.py",
       "name": "graph_visualization/core",
       "stem": "core",
       "folder": "graph_visualization",
-      "color": "#FFEAA7",
+      "color": "#96CEB4",
       "file_path": "graph_visualization\\core.py",
       "imports_count": 0,
-      "importance": 0.06056018168054505,
+      "importance": 0.09220130618517099,
       "is_test": false,
       "is_init": false,
       "size": 8621,
-      "index": 27,
+      "index": 19,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -789,14 +565,14 @@
       "name": "graph_visualization/interactions",
       "stem": "interactions",
       "folder": "graph_visualization",
-      "color": "#FFEAA7",
+      "color": "#96CEB4",
       "file_path": "graph_visualization\\interactions.py",
       "imports_count": 0,
-      "importance": 0.07342922028766086,
+      "importance": 0.11179408374951982,
       "is_test": false,
       "is_init": false,
-      "size": 13889,
-      "index": 28,
+      "size": 14509,
+      "index": 20,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -804,10 +580,10 @@
       "churn_classification": "none",
       "hotspot_score": 0.0,
       "last_modified": "unknown",
-      "performance_score": 0.32963671875,
+      "performance_score": 0.3350859375,
       "is_performance_hotspot": false,
-      "cyclomatic_complexity": 46,
-      "total_lines": 291,
+      "cyclomatic_complexity": 47,
+      "total_lines": 298,
       "function_count": 1,
       "heavy_operations": 0,
       "max_nesting_depth": 7
@@ -817,14 +593,14 @@
       "name": "graph_visualization/layouts",
       "stem": "layouts",
       "folder": "graph_visualization",
-      "color": "#FFEAA7",
+      "color": "#96CEB4",
       "file_path": "graph_visualization\\layouts.py",
       "imports_count": 0,
-      "importance": 0.07342922028766086,
+      "importance": 0.11179408374951982,
       "is_test": false,
       "is_init": false,
       "size": 11407,
-      "index": 29,
+      "index": 21,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -845,14 +621,14 @@
       "name": "graph_visualization/rendering",
       "stem": "rendering",
       "folder": "graph_visualization",
-      "color": "#FFEAA7",
+      "color": "#96CEB4",
       "file_path": "graph_visualization\\rendering.py",
       "imports_count": 0,
-      "importance": 0.07342922028766086,
+      "importance": 0.11179408374951982,
       "is_test": false,
       "is_init": false,
       "size": 10184,
-      "index": 30,
+      "index": 22,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -873,14 +649,14 @@
       "name": "graph_visualization/__init__",
       "stem": "__init__",
       "folder": "graph_visualization",
-      "color": "#FFEAA7",
+      "color": "#96CEB4",
       "file_path": "graph_visualization\\__init__.py",
       "imports_count": 4,
-      "importance": 0.06056018168054505,
+      "importance": 0.09220130618517099,
       "is_test": false,
       "is_init": true,
       "size": 1451,
-      "index": 31,
+      "index": 23,
       "change_count": 0,
       "change_frequency_score": 0.0,
       "change_classification": "none",
@@ -909,18 +685,8 @@
       "is_test_related": false
     },
     {
-      "source": 1,
-      "target": 0,
-      "source_name": "dependency_analyzer_new.py",
-      "target_name": "dependency_analyzer.py",
-      "source_folder": "root",
-      "target_folder": "root",
-      "is_cross_folder": false,
-      "is_test_related": false
-    },
-    {
-      "source": 4,
-      "target": 4,
+      "source": 3,
+      "target": 3,
       "source_name": "graph_controls.py",
       "target_name": "graph_controls.py",
       "source_folder": "root",
@@ -930,57 +696,7 @@
     },
     {
       "source": 5,
-      "target": 4,
-      "source_name": "graph_controls_new.py",
-      "target_name": "graph_controls.py",
-      "source_folder": "root",
-      "target_folder": "root",
-      "is_cross_folder": false,
-      "is_test_related": false
-    },
-    {
-      "source": 6,
-      "target": 26,
-      "source_name": "graph_styles.py",
-      "target_name": "graph_styles_internal/__init__.py",
-      "source_folder": "root",
-      "target_folder": "graph_styles_internal",
-      "is_cross_folder": true,
-      "is_test_related": false
-    },
-    {
-      "source": 6,
-      "target": 26,
-      "source_name": "graph_styles.py",
-      "target_name": "graph_styles_internal/__init__.py",
-      "source_folder": "root",
-      "target_folder": "graph_styles_internal",
-      "is_cross_folder": true,
-      "is_test_related": false
-    },
-    {
-      "source": 8,
-      "target": 6,
-      "source_name": "graph_styles_new.py",
-      "target_name": "graph_styles.py",
-      "source_folder": "root",
-      "target_folder": "root",
-      "is_cross_folder": false,
-      "is_test_related": false
-    },
-    {
-      "source": 8,
-      "target": 6,
-      "source_name": "graph_styles_new.py",
-      "target_name": "graph_styles.py",
-      "source_folder": "root",
-      "target_folder": "root",
-      "is_cross_folder": false,
-      "is_test_related": false
-    },
-    {
-      "source": 9,
-      "target": 9,
+      "target": 5,
       "source_name": "graph_visualization.py",
       "target_name": "graph_visualization.py",
       "source_folder": "root",
@@ -989,18 +705,8 @@
       "is_test_related": false
     },
     {
-      "source": 10,
-      "target": 9,
-      "source_name": "graph_visualization_new.py",
-      "target_name": "graph_visualization.py",
-      "source_folder": "root",
-      "target_folder": "root",
-      "is_cross_folder": false,
-      "is_test_related": false
-    },
-    {
-      "source": 12,
-      "target": 6,
+      "source": 7,
+      "target": 4,
       "source_name": "html_generator.py",
       "target_name": "graph_styles.py",
       "source_folder": "root",
@@ -1009,8 +715,8 @@
       "is_test_related": false
     },
     {
-      "source": 12,
-      "target": 9,
+      "source": 7,
+      "target": 5,
       "source_name": "html_generator.py",
       "target_name": "graph_visualization.py",
       "source_folder": "root",
@@ -1019,8 +725,8 @@
       "is_test_related": false
     },
     {
-      "source": 12,
-      "target": 11,
+      "source": 7,
+      "target": 6,
       "source_name": "html_generator.py",
       "target_name": "hierarchical_layout.py",
       "source_folder": "root",
@@ -1029,8 +735,8 @@
       "is_test_related": false
     },
     {
-      "source": 12,
-      "target": 2,
+      "source": 7,
+      "target": 1,
       "source_name": "html_generator.py",
       "target_name": "force_directed_layout.py",
       "source_folder": "root",
@@ -1039,8 +745,8 @@
       "is_test_related": false
     },
     {
-      "source": 12,
-      "target": 4,
+      "source": 7,
+      "target": 3,
       "source_name": "html_generator.py",
       "target_name": "graph_controls.py",
       "source_folder": "root",
@@ -1049,7 +755,7 @@
       "is_test_related": false
     },
     {
-      "source": 12,
+      "source": 7,
       "target": 0,
       "source_name": "html_generator.py",
       "target_name": "dependency_analyzer.py",
@@ -1059,7 +765,7 @@
       "is_test_related": false
     },
     {
-      "source": 13,
+      "source": 8,
       "target": 0,
       "source_name": "__init__.py",
       "target_name": "dependency_analyzer.py",
@@ -1069,8 +775,8 @@
       "is_test_related": false
     },
     {
-      "source": 13,
-      "target": 12,
+      "source": 8,
+      "target": 7,
       "source_name": "__init__.py",
       "target_name": "html_generator.py",
       "source_folder": "root",
@@ -1079,8 +785,8 @@
       "is_test_related": false
     },
     {
-      "source": 14,
-      "target": 3,
+      "source": 9,
+      "target": 2,
       "source_name": "dependency_analyzer/core.py",
       "target_name": "git_analysis.py",
       "source_folder": "dependency_analyzer",
@@ -1089,8 +795,8 @@
       "is_test_related": false
     },
     {
-      "source": 14,
-      "target": 15,
+      "source": 9,
+      "target": 10,
       "source_name": "dependency_analyzer/core.py",
       "target_name": "dependency_analyzer/import_resolver.py",
       "source_folder": "dependency_analyzer",
@@ -1099,8 +805,8 @@
       "is_test_related": false
     },
     {
-      "source": 14,
-      "target": 16,
+      "source": 9,
+      "target": 11,
       "source_name": "dependency_analyzer/core.py",
       "target_name": "dependency_analyzer/metrics.py",
       "source_folder": "dependency_analyzer",
@@ -1109,8 +815,8 @@
       "is_test_related": false
     },
     {
-      "source": 17,
-      "target": 14,
+      "source": 12,
+      "target": 9,
       "source_name": "dependency_analyzer/__init__.py",
       "target_name": "dependency_analyzer/core.py",
       "source_folder": "dependency_analyzer",
@@ -1119,8 +825,8 @@
       "is_test_related": false
     },
     {
-      "source": 20,
-      "target": 19,
+      "source": 15,
+      "target": 14,
       "source_name": "graph_controls/__init__.py",
       "target_name": "graph_controls/ui_controls.py",
       "source_folder": "graph_controls",
@@ -1129,8 +835,8 @@
       "is_test_related": false
     },
     {
-      "source": 20,
-      "target": 18,
+      "source": 15,
+      "target": 13,
       "source_name": "graph_controls/__init__.py",
       "target_name": "graph_controls/event_handlers.py",
       "source_folder": "graph_controls",
@@ -1139,8 +845,8 @@
       "is_test_related": false
     },
     {
-      "source": 23,
-      "target": 21,
+      "source": 18,
+      "target": 16,
       "source_name": "graph_styles/__init__.py",
       "target_name": "graph_styles/base_styles.py",
       "source_folder": "graph_styles",
@@ -1149,8 +855,8 @@
       "is_test_related": false
     },
     {
-      "source": 23,
-      "target": 22,
+      "source": 18,
+      "target": 17,
       "source_name": "graph_styles/__init__.py",
       "target_name": "graph_styles/layout_styles.py",
       "source_folder": "graph_styles",
@@ -1159,28 +865,8 @@
       "is_test_related": false
     },
     {
-      "source": 26,
-      "target": 21,
-      "source_name": "graph_styles_internal/__init__.py",
-      "target_name": "graph_styles/base_styles.py",
-      "source_folder": "graph_styles_internal",
-      "target_folder": "graph_styles",
-      "is_cross_folder": true,
-      "is_test_related": false
-    },
-    {
-      "source": 26,
-      "target": 22,
-      "source_name": "graph_styles_internal/__init__.py",
-      "target_name": "graph_styles/layout_styles.py",
-      "source_folder": "graph_styles_internal",
-      "target_folder": "graph_styles",
-      "is_cross_folder": true,
-      "is_test_related": false
-    },
-    {
-      "source": 31,
-      "target": 14,
+      "source": 23,
+      "target": 9,
       "source_name": "graph_visualization/__init__.py",
       "target_name": "dependency_analyzer/core.py",
       "source_folder": "graph_visualization",
@@ -1189,8 +875,8 @@
       "is_test_related": false
     },
     {
-      "source": 31,
-      "target": 29,
+      "source": 23,
+      "target": 21,
       "source_name": "graph_visualization/__init__.py",
       "target_name": "graph_visualization/layouts.py",
       "source_folder": "graph_visualization",
@@ -1199,8 +885,8 @@
       "is_test_related": false
     },
     {
-      "source": 31,
-      "target": 28,
+      "source": 23,
+      "target": 20,
       "source_name": "graph_visualization/__init__.py",
       "target_name": "graph_visualization/interactions.py",
       "source_folder": "graph_visualization",
@@ -1209,8 +895,8 @@
       "is_test_related": false
     },
     {
-      "source": 31,
-      "target": 30,
+      "source": 23,
+      "target": 22,
       "source_name": "graph_visualization/__init__.py",
       "target_name": "graph_visualization/rendering.py",
       "source_folder": "graph_visualization",
@@ -1225,23 +911,6 @@
       "folder": "root",
       "stem": "dependency_analyzer",
       "display_name": "dependency_analyzer",
-      "imports": [
-        "dependency_analyzer.py"
-      ],
-      "all_imports": [
-        "dependency_analyzer"
-      ],
-      "imports_count": 1,
-      "internal_imports_count": 1,
-      "is_test": false,
-      "is_init": false,
-      "size": 2507
-    },
-    "dependency_analyzer_new.py": {
-      "file_path": "dependency_analyzer_new.py",
-      "folder": "root",
-      "stem": "dependency_analyzer_new",
-      "display_name": "dependency_analyzer_new",
       "imports": [
         "dependency_analyzer.py"
       ],
@@ -1302,96 +971,27 @@
       "is_init": false,
       "size": 518
     },
-    "graph_controls_new.py": {
-      "file_path": "graph_controls_new.py",
-      "folder": "root",
-      "stem": "graph_controls_new",
-      "display_name": "graph_controls_new",
-      "imports": [
-        "graph_controls.py"
-      ],
-      "all_imports": [
-        "graph_controls"
-      ],
-      "imports_count": 1,
-      "internal_imports_count": 1,
-      "is_test": false,
-      "is_init": false,
-      "size": 518
-    },
     "graph_styles.py": {
       "file_path": "graph_styles.py",
       "folder": "root",
       "stem": "graph_styles",
       "display_name": "graph_styles",
-      "imports": [
-        "graph_styles_internal/__init__.py",
-        "graph_styles_internal/__init__.py"
-      ],
+      "imports": [],
       "all_imports": [
         "graph_styles_internal",
         "graph_styles_internal"
       ],
       "imports_count": 2,
-      "internal_imports_count": 2,
-      "is_test": false,
-      "is_init": false,
-      "size": 1479
-    },
-    "graph_styles_backup.py": {
-      "file_path": "graph_styles_backup.py",
-      "folder": "root",
-      "stem": "graph_styles_backup",
-      "display_name": "graph_styles_backup",
-      "imports": [],
-      "all_imports": [],
-      "imports_count": 0,
       "internal_imports_count": 0,
       "is_test": false,
       "is_init": false,
-      "size": 20518
-    },
-    "graph_styles_new.py": {
-      "file_path": "graph_styles_new.py",
-      "folder": "root",
-      "stem": "graph_styles_new",
-      "display_name": "graph_styles_new",
-      "imports": [
-        "graph_styles.py",
-        "graph_styles.py"
-      ],
-      "all_imports": [
-        "graph_styles",
-        "graph_styles"
-      ],
-      "imports_count": 2,
-      "internal_imports_count": 2,
-      "is_test": false,
-      "is_init": false,
-      "size": 1204
+      "size": 1479
     },
     "graph_visualization.py": {
       "file_path": "graph_visualization.py",
       "folder": "root",
       "stem": "graph_visualization",
       "display_name": "graph_visualization",
-      "imports": [
-        "graph_visualization.py"
-      ],
-      "all_imports": [
-        "graph_visualization"
-      ],
-      "imports_count": 1,
-      "internal_imports_count": 1,
-      "is_test": false,
-      "is_init": false,
-      "size": 537
-    },
-    "graph_visualization_new.py": {
-      "file_path": "graph_visualization_new.py",
-      "folder": "root",
-      "stem": "graph_visualization_new",
-      "display_name": "graph_visualization_new",
       "imports": [
         "graph_visualization.py"
       ],
@@ -1489,7 +1089,7 @@
       "internal_imports_count": 3,
       "is_test": false,
       "is_init": false,
-      "size": 16116
+      "size": 16104
     },
     "dependency_analyzer/import_resolver.py": {
       "file_path": "dependency_analyzer\\import_resolver.py",
@@ -1599,7 +1199,7 @@
       "internal_imports_count": 0,
       "is_test": false,
       "is_init": false,
-      "size": 9750
+      "size": 9834
     },
     "graph_styles/layout_styles.py": {
       "file_path": "graph_styles\\layout_styles.py",
@@ -1612,7 +1212,7 @@
       "internal_imports_count": 0,
       "is_test": false,
       "is_init": false,
-      "size": 14657
+      "size": 15588
     },
     "graph_styles/__init__.py": {
       "file_path": "graph_styles\\__init__.py",
@@ -1632,51 +1232,6 @@
       "is_test": false,
       "is_init": true,
       "size": 1325
-    },
-    "graph_styles_internal/base_styles.py": {
-      "file_path": "graph_styles_internal\\base_styles.py",
-      "folder": "graph_styles_internal",
-      "stem": "base_styles",
-      "display_name": "graph_styles_internal/base_styles",
-      "imports": [],
-      "all_imports": [],
-      "imports_count": 0,
-      "internal_imports_count": 0,
-      "is_test": false,
-      "is_init": false,
-      "size": 9750
-    },
-    "graph_styles_internal/layout_styles.py": {
-      "file_path": "graph_styles_internal\\layout_styles.py",
-      "folder": "graph_styles_internal",
-      "stem": "layout_styles",
-      "display_name": "graph_styles_internal/layout_styles",
-      "imports": [],
-      "all_imports": [],
-      "imports_count": 0,
-      "internal_imports_count": 0,
-      "is_test": false,
-      "is_init": false,
-      "size": 14657
-    },
-    "graph_styles_internal/__init__.py": {
-      "file_path": "graph_styles_internal\\__init__.py",
-      "folder": "graph_styles_internal",
-      "stem": "__init__",
-      "display_name": "graph_styles_internal/__init__",
-      "imports": [
-        "graph_styles/base_styles.py",
-        "graph_styles/layout_styles.py"
-      ],
-      "all_imports": [
-        "base_styles",
-        "layout_styles"
-      ],
-      "imports_count": 2,
-      "internal_imports_count": 2,
-      "is_test": false,
-      "is_init": true,
-      "size": 1102
     },
     "graph_visualization/core.py": {
       "file_path": "graph_visualization\\core.py",
@@ -1702,7 +1257,7 @@
       "internal_imports_count": 0,
       "is_test": false,
       "is_init": false,
-      "size": 13889
+      "size": 14509
     },
     "graph_visualization/layouts.py": {
       "file_path": "graph_visualization\\layouts.py",
@@ -1786,18 +1341,8 @@
       "test_modules": [],
       "count": 3
     },
-    "graph_styles_internal": {
-      "color": "#96CEB4",
-      "modules": [
-        "graph_styles_internal/base_styles",
-        "graph_styles_internal/layout_styles",
-        "graph_styles_internal/__init__"
-      ],
-      "test_modules": [],
-      "count": 3
-    },
     "graph_visualization": {
-      "color": "#FFEAA7",
+      "color": "#96CEB4",
       "modules": [
         "graph_visualization/core",
         "graph_visualization/interactions",
@@ -1809,90 +1354,77 @@
       "count": 5
     },
     "root": {
-      "color": "#DDA0DD",
+      "color": "#FFEAA7",
       "modules": [
         "dependency_analyzer",
-        "dependency_analyzer_new",
         "force_directed_layout",
         "git_analysis",
         "graph_controls",
-        "graph_controls_new",
         "graph_styles",
-        "graph_styles_backup",
-        "graph_styles_new",
         "graph_visualization",
-        "graph_visualization_new",
         "hierarchical_layout",
         "html_generator",
         "__init__"
       ],
       "test_modules": [],
-      "count": 14
+      "count": 9
     }
   },
   "importance_scores": {
     "dependency_analyzer.py": 1.0,
-    "dependency_analyzer_new.py": 0.06056018168054505,
-    "force_directed_layout.py": 0.07278576835730508,
-    "git_analysis.py": 0.09595003785011355,
-    "graph_controls.py": 0.8284128185717887,
-    "graph_controls_new.py": 0.06056018168054505,
-    "graph_styles.py": 0.09852384557153672,
-    "graph_styles_backup.py": 0.06056018168054505,
-    "graph_styles_new.py": 0.06056018168054505,
-    "graph_visualization.py": 0.8284128185717887,
-    "graph_visualization_new.py": 0.06056018168054505,
-    "hierarchical_layout.py": 0.07278576835730508,
-    "html_generator.py": 0.08629825889477669,
-    "__init__.py": 0.06056018168054505,
-    "dependency_analyzer/core.py": 0.12490537471612415,
-    "dependency_analyzer/import_resolver.py": 0.09595003785011355,
-    "dependency_analyzer/metrics.py": 0.09595003785011355,
-    "dependency_analyzer/__init__.py": 0.06056018168054505,
-    "graph_controls/event_handlers.py": 0.08629825889477669,
-    "graph_controls/ui_controls.py": 0.08629825889477669,
-    "graph_controls/__init__.py": 0.06056018168054505,
-    "graph_styles/base_styles.py": 0.12983220571536716,
-    "graph_styles/layout_styles.py": 0.12983220571536716,
-    "graph_styles/__init__.py": 0.06056018168054505,
-    "graph_styles_internal/base_styles.py": 0.06056018168054505,
-    "graph_styles_internal/layout_styles.py": 0.06056018168054505,
-    "graph_styles_internal/__init__.py": 0.10243281604844816,
-    "graph_visualization/core.py": 0.06056018168054505,
-    "graph_visualization/interactions.py": 0.07342922028766086,
-    "graph_visualization/layouts.py": 0.07342922028766086,
-    "graph_visualization/rendering.py": 0.07342922028766086,
-    "graph_visualization/__init__.py": 0.06056018168054505
+    "force_directed_layout.py": 0.11081444487130238,
+    "git_analysis.py": 0.14608144448713029,
+    "graph_controls.py": 0.7387629658086824,
+    "graph_styles.py": 0.11081444487130238,
+    "graph_visualization.py": 0.7387629658086824,
+    "hierarchical_layout.py": 0.11081444487130238,
+    "html_generator.py": 0.13138686131386865,
+    "__init__.py": 0.09220130618517099,
+    "dependency_analyzer/core.py": 0.19016519400691514,
+    "dependency_analyzer/import_resolver.py": 0.14608144448713029,
+    "dependency_analyzer/metrics.py": 0.14608144448713029,
+    "dependency_analyzer/__init__.py": 0.09220130618517099,
+    "graph_controls/event_handlers.py": 0.13138686131386865,
+    "graph_controls/ui_controls.py": 0.13138686131386865,
+    "graph_controls/__init__.py": 0.09220130618517099,
+    "graph_styles/base_styles.py": 0.13138686131386865,
+    "graph_styles/layout_styles.py": 0.13138686131386865,
+    "graph_styles/__init__.py": 0.09220130618517099,
+    "graph_visualization/core.py": 0.09220130618517099,
+    "graph_visualization/interactions.py": 0.11179408374951982,
+    "graph_visualization/layouts.py": 0.11179408374951982,
+    "graph_visualization/rendering.py": 0.11179408374951982,
+    "graph_visualization/__init__.py": 0.09220130618517099
   },
   "git_analysis": {
-    "total_files_analyzed": 54,
+    "total_files_analyzed": 65,
     "analysis_period_days": 30,
     "git_available": true,
     "hotspots": [
       {
-        "file_path": "graph_modules/dependency_analyzer.py",
-        "hotspot_score": 0.804,
-        "change_count": 4,
-        "total_churn": 1441,
-        "classification": "hotspot"
-      },
-      {
         "file_path": "graph_modules/graph_styles.py",
-        "hotspot_score": 0.804,
+        "hotspot_score": 0.706,
         "change_count": 4,
         "total_churn": 1422,
         "classification": "hotspot"
       },
       {
         "file_path": "graph_modules/graph_visualization.py",
-        "hotspot_score": 0.804,
+        "hotspot_score": 0.706,
         "change_count": 4,
         "total_churn": 1972,
         "classification": "hotspot"
       },
       {
+        "file_path": "graph_modules/dependency_analyzer.py",
+        "hotspot_score": 0.706,
+        "change_count": 4,
+        "total_churn": 1441,
+        "classification": "hotspot"
+      },
+      {
         "file_path": "graph_modules/graph_controls.py",
-        "hotspot_score": 0.6683999999999999,
+        "hotspot_score": 0.5949,
         "change_count": 3,
         "total_churn": 968,
         "classification": "hotspot"
@@ -1900,248 +1432,6 @@
     ],
     "stable_files": [],
     "file_data": {
-      "test_imports_and_performance.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 16:52:08 +0100",
-        "first_modified": "2025-07-23 16:52:08 +0100",
-        "commits": [
-          {
-            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
-            "date": "2025-07-23 16:52:08 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/graph_visualization/rendering.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 226,
-        "total_deletions": 0,
-        "total_churn": 226,
-        "commit_count": 1,
-        "avg_churn_per_commit": 226.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.1938
-      },
-      "test_implementation.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/dependency_analyzer/core.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 392,
-        "total_deletions": 0,
-        "total_churn": 392,
-        "commit_count": 1,
-        "avg_churn_per_commit": 392.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.24359999999999998
-      },
-      "graph_modules/graph_controls.py": {
-        "change_count": 3,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          },
-          {
-            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
-            "date": "2025-07-23 15:10:10 +0100"
-          },
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.5399999999999999,
-        "change_classification": "high",
-        "total_additions": 492,
-        "total_deletions": 476,
-        "total_churn": 968,
-        "commit_count": 3,
-        "avg_churn_per_commit": 322.6666666666667,
-        "churn_classification": "high",
-        "hotspot_score": 0.6683999999999999
-      },
-      "final_verification.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "debug_force_layout.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/graph_styles_internal/layout_styles.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 554,
-        "total_deletions": 0,
-        "total_churn": 554,
-        "commit_count": 1,
-        "avg_churn_per_commit": 554.0,
-        "churn_classification": "high",
-        "hotspot_score": 0.2922
-      },
-      "import_resolution_test.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/graph_visualization/__init__.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 44,
-        "total_deletions": 0,
-        "total_churn": 44,
-        "commit_count": 1,
-        "avg_churn_per_commit": 44.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1392
-      },
-      "graph_modules/graph_styles/layout_styles.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 554,
-        "total_deletions": 0,
-        "total_churn": 554,
-        "commit_count": 1,
-        "avg_churn_per_commit": 554.0,
-        "churn_classification": "high",
-        "hotspot_score": 0.2922
-      },
-      "graph_modules/graph_visualization_new.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 16,
-        "total_deletions": 0,
-        "total_churn": 16,
-        "commit_count": 1,
-        "avg_churn_per_commit": 16.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1308
-      },
-      "graph_modules/html_generator.py": {
-        "change_count": 2,
-        "last_modified": "2025-07-23 15:10:10 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
-            "date": "2025-07-23 15:10:10 +0100"
-          },
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.36,
-        "change_classification": "medium",
-        "total_additions": 372,
-        "total_deletions": 0,
-        "total_churn": 372,
-        "commit_count": 2,
-        "avg_churn_per_commit": 186.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.3636
-      },
       "graph_modules/dependency_analyzer/import_resolver.py": {
         "change_count": 1,
         "last_modified": "2025-07-23 20:09:55 +0100",
@@ -2152,7 +1442,7 @@
             "date": "2025-07-23 20:09:55 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
         "total_additions": 132,
         "total_deletions": 0,
@@ -2160,189 +1450,7 @@
         "commit_count": 1,
         "avg_churn_per_commit": 132.0,
         "churn_classification": "medium",
-        "hotspot_score": 0.1656
-      },
-      "graph_modules/graph_styles_backup.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 670,
-        "total_deletions": 0,
-        "total_churn": 670,
-        "commit_count": 1,
-        "avg_churn_per_commit": 670.0,
-        "churn_classification": "high",
-        "hotspot_score": 0.327
-      },
-      "test_dependency_analyzer_refactor.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "batch_2_validation.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/graph_visualization/layouts.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 249,
-        "total_deletions": 0,
-        "total_churn": 249,
-        "commit_count": 1,
-        "avg_churn_per_commit": 249.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.2007
-      },
-      "final_feature_validation.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 16:52:08 +0100",
-        "first_modified": "2025-07-23 16:52:08 +0100",
-        "commits": [
-          {
-            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
-            "date": "2025-07-23 16:52:08 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "test_all_fixes.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/dependency_analyzer.py": {
-        "change_count": 4,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          },
-          {
-            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
-            "date": "2025-07-23 16:52:08 +0100"
-          },
-          {
-            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
-            "date": "2025-07-23 15:10:10 +0100"
-          },
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.72,
-        "change_classification": "very_high",
-        "total_additions": 746,
-        "total_deletions": 695,
-        "total_churn": 1441,
-        "commit_count": 4,
-        "avg_churn_per_commit": 360.25,
-        "churn_classification": "very_high",
-        "hotspot_score": 0.804
-      },
-      "final_refactoring_validation.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/force_directed_layout.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 268,
-        "total_deletions": 0,
-        "total_churn": 268,
-        "commit_count": 1,
-        "avg_churn_per_commit": 268.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.2064
-      },
-      "graph_modules/dependency_analyzer/__init__.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 18,
-        "total_deletions": 0,
-        "total_churn": 18,
-        "commit_count": 1,
-        "avg_churn_per_commit": 18.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1314
+        "hotspot_score": 0.1411
       },
       "graph_modules/graph_styles.py": {
         "change_count": 4,
@@ -2366,43 +1474,53 @@
             "date": "2025-07-23 13:41:02 +0100"
           }
         ],
-        "change_frequency_score": 0.72,
-        "change_classification": "very_high",
+        "change_frequency_score": 0.58,
+        "change_classification": "high",
         "total_additions": 736,
         "total_deletions": 686,
         "total_churn": 1422,
         "commit_count": 4,
         "avg_churn_per_commit": 355.5,
         "churn_classification": "very_high",
-        "hotspot_score": 0.804
+        "hotspot_score": 0.706
       },
-      "comprehensive_test.py": {
+      "graph_modules/graph_styles/layout_styles.py": {
         "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 554,
+        "total_deletions": 0,
+        "total_churn": 554,
+        "commit_count": 1,
+        "avg_churn_per_commit": 554.0,
+        "churn_classification": "high",
+        "hotspot_score": 0.2677
+      },
+      "enhanced_dependency_graph_modular.py": {
+        "change_count": 2,
+        "last_modified": "2025-07-23 15:10:10 +0100",
         "first_modified": "2025-07-23 13:41:02 +0100",
         "commits": [
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
           {
             "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
             "date": "2025-07-23 13:41:02 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.29,
         "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "analyze_project_maximums.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
+        "hotspot_score": 0.20299999999999999
       },
       "graph_modules/dependency_analyzer/metrics.py": {
         "change_count": 1,
@@ -2414,7 +1532,7 @@
             "date": "2025-07-23 20:09:55 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
         "total_additions": 225,
         "total_deletions": 0,
@@ -2422,29 +1540,33 @@
         "commit_count": 1,
         "avg_churn_per_commit": 225.0,
         "churn_classification": "medium",
-        "hotspot_score": 0.1935
+        "hotspot_score": 0.16899999999999998
       },
-      "graph_modules/graph_controls/ui_controls.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
+      "graph_modules/html_generator.py": {
+        "change_count": 2,
+        "last_modified": "2025-07-23 15:10:10 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
         "commits": [
           {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.29,
         "change_classification": "low",
-        "total_additions": 254,
+        "total_additions": 372,
         "total_deletions": 0,
-        "total_churn": 254,
-        "commit_count": 1,
-        "avg_churn_per_commit": 254.0,
+        "total_churn": 372,
+        "commit_count": 2,
+        "avg_churn_per_commit": 186.0,
         "churn_classification": "medium",
-        "hotspot_score": 0.2022
+        "hotspot_score": 0.3146
       },
-      "graph_modules/graph_styles/__init__.py": {
+      "graph_modules/graph_styles_internal/layout_styles.py": {
         "change_count": 1,
         "last_modified": "2025-07-23 20:09:55 +0100",
         "first_modified": "2025-07-23 20:09:55 +0100",
@@ -2454,35 +1576,29 @@
             "date": "2025-07-23 20:09:55 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
-        "total_additions": 48,
+        "total_additions": 554,
         "total_deletions": 0,
-        "total_churn": 48,
+        "total_churn": 554,
         "commit_count": 1,
-        "avg_churn_per_commit": 48.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1404
+        "avg_churn_per_commit": 554.0,
+        "churn_classification": "high",
+        "hotspot_score": 0.2677
       },
-      "graph_modules/graph_controls_new.py": {
+      "batch_2_validation.py": {
         "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
         "commits": [
           {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
-        "total_additions": 16,
-        "total_deletions": 0,
-        "total_churn": 16,
-        "commit_count": 1,
-        "avg_churn_per_commit": 16.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1308
+        "hotspot_score": 0.10149999999999999
       },
       "graph_modules/graph_visualization.py": {
         "change_count": 4,
@@ -2506,343 +1622,15 @@
             "date": "2025-07-23 13:41:02 +0100"
           }
         ],
-        "change_frequency_score": 0.72,
-        "change_classification": "very_high",
+        "change_frequency_score": 0.58,
+        "change_classification": "high",
         "total_additions": 994,
         "total_deletions": 978,
         "total_churn": 1972,
         "commit_count": 4,
         "avg_churn_per_commit": 493.0,
         "churn_classification": "very_high",
-        "hotspot_score": 0.804
-      },
-      "graph_modules/graph_visualization/interactions.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 290,
-        "total_deletions": 0,
-        "total_churn": 290,
-        "commit_count": 1,
-        "avg_churn_per_commit": 290.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.213
-      },
-      "graph_modules/graph_styles_new.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 39,
-        "total_deletions": 0,
-        "total_churn": 39,
-        "commit_count": 1,
-        "avg_churn_per_commit": 39.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1377
-      },
-      "debug_visualization_issues.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "enhanced_dependency_graph_modular.py": {
-        "change_count": 2,
-        "last_modified": "2025-07-23 15:10:10 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
-            "date": "2025-07-23 15:10:10 +0100"
-          },
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.36,
-        "change_classification": "medium",
-        "hotspot_score": 0.252
-      },
-      "graph_modules/graph_controls/event_handlers.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 248,
-        "total_deletions": 0,
-        "total_churn": 248,
-        "commit_count": 1,
-        "avg_churn_per_commit": 248.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.2004
-      },
-      "graph_modules/graph_controls/__init__.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 47,
-        "total_deletions": 0,
-        "total_churn": 47,
-        "commit_count": 1,
-        "avg_churn_per_commit": 47.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1401
-      },
-      "graph_modules/graph_visualization/core.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 221,
-        "total_deletions": 0,
-        "total_churn": 221,
-        "commit_count": 1,
-        "avg_churn_per_commit": 221.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.1923
-      },
-      "validate_latest_fixes.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 16:52:08 +0100",
-        "first_modified": "2025-07-23 16:52:08 +0100",
-        "commits": [
-          {
-            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
-            "date": "2025-07-23 16:52:08 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/graph_styles/base_styles.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 266,
-        "total_deletions": 0,
-        "total_churn": 266,
-        "commit_count": 1,
-        "avg_churn_per_commit": 266.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.20579999999999998
-      },
-      "test_graph_visualization_refactor.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "test_graph_styles_refactoring.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "verify_improvements.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 15:10:10 +0100",
-        "first_modified": "2025-07-23 15:10:10 +0100",
-        "commits": [
-          {
-            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
-            "date": "2025-07-23 15:10:10 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "hotspot_score": 0.126
-      },
-      "graph_modules/__init__.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 29,
-        "total_deletions": 0,
-        "total_churn": 29,
-        "commit_count": 1,
-        "avg_churn_per_commit": 29.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1347
-      },
-      "graph_modules/git_analysis.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 389,
-        "total_deletions": 0,
-        "total_churn": 389,
-        "commit_count": 1,
-        "avg_churn_per_commit": 389.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.2427
-      },
-      "graph_modules/hierarchical_layout.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 13:41:02 +0100",
-        "first_modified": "2025-07-23 13:41:02 +0100",
-        "commits": [
-          {
-            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
-            "date": "2025-07-23 13:41:02 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 220,
-        "total_deletions": 0,
-        "total_churn": 220,
-        "commit_count": 1,
-        "avg_churn_per_commit": 220.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.192
-      },
-      "graph_modules/graph_styles_internal/__init__.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 48,
-        "total_deletions": 0,
-        "total_churn": 48,
-        "commit_count": 1,
-        "avg_churn_per_commit": 48.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1404
-      },
-      "graph_modules/dependency_analyzer_new.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 51,
-        "total_deletions": 0,
-        "total_churn": 51,
-        "commit_count": 1,
-        "avg_churn_per_commit": 51.0,
-        "churn_classification": "low",
-        "hotspot_score": 0.1413
-      },
-      "graph_modules/graph_styles_internal/base_styles.py": {
-        "change_count": 1,
-        "last_modified": "2025-07-23 20:09:55 +0100",
-        "first_modified": "2025-07-23 20:09:55 +0100",
-        "commits": [
-          {
-            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
-            "date": "2025-07-23 20:09:55 +0100"
-          }
-        ],
-        "change_frequency_score": 0.18,
-        "change_classification": "low",
-        "total_additions": 266,
-        "total_deletions": 0,
-        "total_churn": 266,
-        "commit_count": 1,
-        "avg_churn_per_commit": 266.0,
-        "churn_classification": "medium",
-        "hotspot_score": 0.20579999999999998
+        "hotspot_score": 0.706
       },
       "validate_fixes.py": {
         "change_count": 1,
@@ -2854,11 +1642,11 @@
             "date": "2025-07-23 15:10:10 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
-        "hotspot_score": 0.126
+        "hotspot_score": 0.10149999999999999
       },
-      "test_current_state.py": {
+      "graph_modules/graph_visualization/layouts.py": {
         "change_count": 1,
         "last_modified": "2025-07-23 20:09:55 +0100",
         "first_modified": "2025-07-23 20:09:55 +0100",
@@ -2868,9 +1656,359 @@
             "date": "2025-07-23 20:09:55 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
-        "hotspot_score": 0.126
+        "total_additions": 249,
+        "total_deletions": 0,
+        "total_churn": 249,
+        "commit_count": 1,
+        "avg_churn_per_commit": 249.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1762
+      },
+      "test_all_fixes.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "final_feature_validation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 16:52:08 +0100",
+        "first_modified": "2025-07-23 16:52:08 +0100",
+        "commits": [
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_styles_internal/base_styles.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 266,
+        "total_deletions": 0,
+        "total_churn": 266,
+        "commit_count": 1,
+        "avg_churn_per_commit": 266.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1813
+      },
+      "graph_modules/hierarchical_layout.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 220,
+        "total_deletions": 0,
+        "total_churn": 220,
+        "commit_count": 1,
+        "avg_churn_per_commit": 220.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.16749999999999998
+      },
+      "graph_modules/graph_visualization_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 16,
+        "total_deletions": 0,
+        "total_churn": 16,
+        "commit_count": 1,
+        "avg_churn_per_commit": 16.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.10629999999999999
+      },
+      "test_graph_visualization_refactor.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "debug_visualization_issues.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/dependency_analyzer_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 51,
+        "total_deletions": 0,
+        "total_churn": 51,
+        "commit_count": 1,
+        "avg_churn_per_commit": 51.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.11679999999999999
+      },
+      "graph_modules/dependency_analyzer/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 18,
+        "total_deletions": 0,
+        "total_churn": 18,
+        "commit_count": 1,
+        "avg_churn_per_commit": 18.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1069
+      },
+      "test_imports_and_syntax.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_styles/__init__.py": {
+        "change_count": 2,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          },
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.29,
+        "change_classification": "low",
+        "total_additions": 59,
+        "total_deletions": 0,
+        "total_churn": 59,
+        "commit_count": 2,
+        "avg_churn_per_commit": 29.5,
+        "churn_classification": "low",
+        "hotspot_score": 0.22069999999999998
+      },
+      "verify_improvements.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 15:10:10 +0100",
+        "first_modified": "2025-07-23 15:10:10 +0100",
+        "commits": [
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "tests/test_performance_resources.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "test_output/test_project/test_module.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "tests/test_import_syntax_validation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "tests/automate_tests.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_controls/event_handlers.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 248,
+        "total_deletions": 0,
+        "total_churn": 248,
+        "commit_count": 1,
+        "avg_churn_per_commit": 248.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1759
+      },
+      "graph_modules/graph_controls/ui_controls.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 254,
+        "total_deletions": 0,
+        "total_churn": 254,
+        "commit_count": 1,
+        "avg_churn_per_commit": 254.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1777
+      },
+      "graph_modules/graph_styles_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 39,
+        "total_deletions": 0,
+        "total_churn": 39,
+        "commit_count": 1,
+        "avg_churn_per_commit": 39.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1132
+      },
+      "graph_modules/graph_styles_internal/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 48,
+        "total_deletions": 0,
+        "total_churn": 48,
+        "commit_count": 1,
+        "avg_churn_per_commit": 48.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.11589999999999999
       },
       "validate_all_fixes.py": {
         "change_count": 1,
@@ -2882,9 +2020,301 @@
             "date": "2025-07-23 20:09:55 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
-        "hotspot_score": 0.126
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_visualization/interactions.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 290,
+        "total_deletions": 0,
+        "total_churn": 290,
+        "commit_count": 1,
+        "avg_churn_per_commit": 290.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1885
+      },
+      "tests/comprehensive_post_restructuring_test.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_controls/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 47,
+        "total_deletions": 0,
+        "total_churn": 47,
+        "commit_count": 1,
+        "avg_churn_per_commit": 47.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1156
+      },
+      "test_dependency_analyzer_refactor.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/force_directed_layout.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 268,
+        "total_deletions": 0,
+        "total_churn": 268,
+        "commit_count": 1,
+        "avg_churn_per_commit": 268.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1819
+      },
+      "graph_modules/git_analysis.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 389,
+        "total_deletions": 0,
+        "total_churn": 389,
+        "commit_count": 1,
+        "avg_churn_per_commit": 389.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.2182
+      },
+      "import_resolution_test.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_visualization/core.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 221,
+        "total_deletions": 0,
+        "total_churn": 221,
+        "commit_count": 1,
+        "avg_churn_per_commit": 221.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1678
+      },
+      "diagnose_file_discovery.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "analyze_project_maximums.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "final_verification.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "tests/comprehensive_dependency_graph_test.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "validate_latest_fixes.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 16:52:08 +0100",
+        "first_modified": "2025-07-23 16:52:08 +0100",
+        "commits": [
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "tests/simple_ci_test.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "test_imports_and_performance.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 16:52:08 +0100",
+        "first_modified": "2025-07-23 16:52:08 +0100",
+        "commits": [
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/dependency_analyzer/core.py": {
+        "change_count": 2,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          },
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.29,
+        "change_classification": "low",
+        "total_additions": 403,
+        "total_deletions": 4,
+        "total_churn": 407,
+        "commit_count": 2,
+        "avg_churn_per_commit": 203.5,
+        "churn_classification": "medium",
+        "hotspot_score": 0.32509999999999994
+      },
+      "graph_modules/graph_controls.py": {
+        "change_count": 3,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          },
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.435,
+        "change_classification": "medium",
+        "total_additions": 492,
+        "total_deletions": 476,
+        "total_churn": 968,
+        "commit_count": 3,
+        "avg_churn_per_commit": 322.6666666666667,
+        "churn_classification": "high",
+        "hotspot_score": 0.5949
       },
       "test_graph_controls_refactor.py": {
         "change_count": 1,
@@ -2896,18 +2326,282 @@
             "date": "2025-07-23 20:09:55 +0100"
           }
         ],
-        "change_frequency_score": 0.18,
+        "change_frequency_score": 0.145,
         "change_classification": "low",
-        "hotspot_score": 0.126
+        "hotspot_score": 0.10149999999999999
+      },
+      "test_analyzer_fix.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "final_refactoring_validation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "tests/run_comprehensive_tests.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 21:44:07 +0100",
+        "first_modified": "2025-07-23 21:44:07 +0100",
+        "commits": [
+          {
+            "commit": "b24422dc86ef682c5f5b11d25c81d70e50811d04",
+            "date": "2025-07-23 21:44:07 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "comprehensive_test.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "test_graph_styles_refactoring.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_visualization/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 44,
+        "total_deletions": 0,
+        "total_churn": 44,
+        "commit_count": 1,
+        "avg_churn_per_commit": 44.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.1147
+      },
+      "test_implementation.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_visualization/rendering.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 226,
+        "total_deletions": 0,
+        "total_churn": 226,
+        "commit_count": 1,
+        "avg_churn_per_commit": 226.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1693
+      },
+      "graph_modules/__init__.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 29,
+        "total_deletions": 0,
+        "total_churn": 29,
+        "commit_count": 1,
+        "avg_churn_per_commit": 29.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.11019999999999999
+      },
+      "test_current_state.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/graph_styles_backup.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 670,
+        "total_deletions": 0,
+        "total_churn": 670,
+        "commit_count": 1,
+        "avg_churn_per_commit": 670.0,
+        "churn_classification": "high",
+        "hotspot_score": 0.3025
+      },
+      "graph_modules/graph_controls_new.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 16,
+        "total_deletions": 0,
+        "total_churn": 16,
+        "commit_count": 1,
+        "avg_churn_per_commit": 16.0,
+        "churn_classification": "low",
+        "hotspot_score": 0.10629999999999999
+      },
+      "debug_force_layout.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 13:41:02 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "hotspot_score": 0.10149999999999999
+      },
+      "graph_modules/dependency_analyzer.py": {
+        "change_count": 4,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 13:41:02 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          },
+          {
+            "commit": "74addd264998d72ca9cb32a7324f745464a9e423",
+            "date": "2025-07-23 16:52:08 +0100"
+          },
+          {
+            "commit": "8230128dfd1cc3e26ccf5da6ef495c0b717ba0ee",
+            "date": "2025-07-23 15:10:10 +0100"
+          },
+          {
+            "commit": "a6a052817f55edc8d79fef3860ec0cde05cfffa2",
+            "date": "2025-07-23 13:41:02 +0100"
+          }
+        ],
+        "change_frequency_score": 0.58,
+        "change_classification": "high",
+        "total_additions": 746,
+        "total_deletions": 695,
+        "total_churn": 1441,
+        "commit_count": 4,
+        "avg_churn_per_commit": 360.25,
+        "churn_classification": "very_high",
+        "hotspot_score": 0.706
+      },
+      "graph_modules/graph_styles/base_styles.py": {
+        "change_count": 1,
+        "last_modified": "2025-07-23 20:09:55 +0100",
+        "first_modified": "2025-07-23 20:09:55 +0100",
+        "commits": [
+          {
+            "commit": "d0b601e366921408bea124d0fd66fc584ce41d0e",
+            "date": "2025-07-23 20:09:55 +0100"
+          }
+        ],
+        "change_frequency_score": 0.145,
+        "change_classification": "low",
+        "total_additions": 266,
+        "total_deletions": 0,
+        "total_churn": 266,
+        "commit_count": 1,
+        "avg_churn_per_commit": 266.0,
+        "churn_classification": "medium",
+        "hotspot_score": 0.1813
       }
     }
   },
   "statistics": {
-    "total_files": 32,
-    "total_dependencies": 32,
-    "cross_folder_dependencies": 6,
+    "total_files": 24,
+    "total_dependencies": 23,
+    "cross_folder_dependencies": 2,
     "test_files": 0,
-    "folders": 6,
+    "folders": 5,
     "git_analysis_available": true,
     "hotspots_detected": 4,
     "stable_files_detected": 0

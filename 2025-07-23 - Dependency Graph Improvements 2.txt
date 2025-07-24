@@ -12,10 +12,10 @@ Dead Code Detection
 Identify unused functions, classes, or modules.
 Flag orphaned code for cleanup.
 
-blue edges between orange and blue nodes not showing
+blue edges between orange & blue nodes not showing
 
-blue nodes stay in the diagram as blue after a node has been unselected, not returning to default 
+edges STILL not being dimmed as the setting says
 
-edges STILL not being dimmed as the setting says, this happened with the text earlier, compare how they are implemented
+Add Performance Hotspot metric to the tooltip
 
-for performance the red glowing is still present and no warning icon
+reduce horizontal distance of the tooltip from the cursor 

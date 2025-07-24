@@ -942,8 +942,8 @@
                     <strong>File Size:</strong> ${(d.size / 1024).toFixed(1)}KB<br/>
                     ${d.is_test ? "<strong>Type:</strong> Test File<br/>" : ""}
                 `)
-                .style("left", (event.pageX + 10) + "px")
-                .style("top", (event.pageY - 10) + "px");
+                .style("left", (event.pageX + Math.min(25, window.innerWidth - event.pageX - 320)) + "px")
+                .style("top", (event.pageY - Math.min(15, event.pageY - 100)) + "px");
         }
         
         function handleEnhancedMouseOut() {
@@ -994,16 +994,23 @@
                         return !allReachable.has(nodeData.id);
                     });
                 
-                // Highlight edges - FIXED: Only highlight edges between highlighted nodes
+                // Highlight edges - ENHANCED: Support mixed-category edges
                 window.graphElements.link
                     .classed("highlighted", d => directConnected.has(d.source_name) && directConnected.has(d.target_name))
                     .classed("path-highlighted", d => pathConnected.has(d.source_name) && pathConnected.has(d.target_name))
+                    .classed("mixed-highlighted", d => 
+                        (directConnected.has(d.source_name) && pathConnected.has(d.target_name)) ||
+                        (pathConnected.has(d.source_name) && directConnected.has(d.target_name))
+                    )
                     .classed("dimmed", d => !(allReachable.has(d.source_name) && allReachable.has(d.target_name)))
                     .attr("marker-end", d => {
                         if (directConnected.has(d.source_name) && directConnected.has(d.target_name)) {
                             return "url(#arrowhead-highlighted)";
                         } else if (pathConnected.has(d.source_name) && pathConnected.has(d.target_name)) {
                             return "url(#arrowhead-path)";
+                        } else if ((directConnected.has(d.source_name) && pathConnected.has(d.target_name)) ||
+                                   (pathConnected.has(d.source_name) && directConnected.has(d.target_name))) {
+                            return "url(#arrowhead-mixed)";
                         } else if (!(allReachable.has(d.source_name) && allReachable.has(d.target_name))) {
                             return "url(#arrowhead-dimmed)";
                         } else {

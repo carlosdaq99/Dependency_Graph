@@ -133,8 +133,33 @@ def get_layout_styles_css() -> str:
             opacity: 0.9;
         }
         
+        .link.mixed-highlighted {
+            stroke: var(--mixed-edge-color, #9c27b0);  /* Purple for mixed orange/blue edges */
+            stroke-width: 2.8;
+            opacity: 0.95;
+        }
+        
+                /* Enhanced dimming styles - consolidated and prioritized */
         .link.dimmed {
-            opacity: var(--dimmed-link-opacity);
+            opacity: var(--dimmed-link-opacity) !important;
+            transition: opacity 0.3s ease !important;
+        }
+        
+        .node.dimmed {
+            opacity: var(--dimmed-opacity) !important;
+            transition: opacity 0.3s ease !important;
+        }
+        
+        .node-label.dimmed {
+            opacity: var(--dimmed-text-opacity) !important;
+            transition: opacity 0.3s ease !important;
+        }
+        
+        /* Mixed-category edge styles */
+        .link.mixed-highlighted {
+            stroke: var(--mixed-edge-color, #9c27b0) !important;  /* Purple for mixed edges */
+            stroke-width: 2.8 !important;
+            opacity: 0.95 !important;
         }
         
         .link.hidden {

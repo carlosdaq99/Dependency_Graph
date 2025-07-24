@@ -50,8 +50,69 @@ def get_ui_controls_js() -> str:
             }
         }
         
-        // Enhanced controls management
-        function updateEnhancedControls() {
+        // === Configurable Control Panel Section Order ===
+        // Change this array to reorder control panel cards
+        const controlPanelOrder = [
+            'statistics',
+            'layoutControls', 
+            'directories',
+            'testControls',
+            'highlightingOptions',
+            'advancedFilters'
+        ];
+
+        // Mapping from card name to render function
+        const controlPanelRenderers = {
+            statistics: updateStatisticsCard,
+            layoutControls: updateLayoutControlsCard,
+            directories: updateDirectoriesCard,
+            testControls: updateTestControlsCard,
+            highlightingOptions: updateHighlightingOptionsCard,
+            advancedFilters: updateAdvancedFiltersCard
+        };
+
+        // Main render function for control panel
+        function renderControlPanel() {
+            controlPanelOrder.forEach(cardName => {
+                if (controlPanelRenderers[cardName]) {
+                    controlPanelRenderers[cardName]();
+                }
+            });
+        }
+
+        // === Individual Card Renderers ===
+        
+        // Statistics Card
+        function updateStatisticsCard() {
+            // Updates #stats-content container
+            updateEnhancedStats();
+        }
+
+        // Layout Controls Card (includes layout toggle + path highlighting)
+        function updateLayoutControlsCard() {
+            // Update layout toggle
+            const toggleSwitch = document.getElementById('toggle-switch');
+            const layoutIndicator = document.getElementById('layout-indicator');
+            
+            if (toggleSwitch) {
+                if (currentLayout === "force") {
+                    toggleSwitch.classList.add('active');
+                    layoutIndicator.textContent = "Current: Force-Directed Layout";
+                } else {
+                    toggleSwitch.classList.remove('active');
+                    layoutIndicator.textContent = "Current: Hierarchical Layout";
+                }
+            }
+
+            // Update path highlighting toggle (moved from highlighting options)
+            const pathToggle = d3.select("#path-highlighting-toggle");
+            pathToggle.select(".folder-checkbox")
+                .text(showCompletePaths ? "☑" : "☐");
+            pathToggle.on("click", togglePathHighlighting);
+        }
+
+        // Directories Card  
+        function updateDirectoriesCard() {
             const container = d3.select("#folder-controls");
             container.selectAll("*").remove();
             
@@ -88,20 +149,6 @@ def get_ui_controls_js() -> str:
                     .html(labelText + testText);
             });
             
-            // Test toggle
-            const testToggle = d3.select("#test-toggle");
-            testToggle.select(".folder-checkbox")
-                .text(showTestDependencies ? "☑" : "☐");
-            
-            testToggle.on("click", toggleTestDependencies);
-            
-            // Path highlighting toggle
-            const pathToggle = d3.select("#path-highlighting-toggle");
-            pathToggle.select(".folder-checkbox")
-                .text(showCompletePaths ? "☑" : "☐");
-            
-            pathToggle.on("click", togglePathHighlighting);
-            
             // Update "Select All" toggle
             const allFolders = Object.keys(graphData.subfolder_info);
             const allSelected = allFolders.every(folder => checkedFolders.has(folder));
@@ -109,18 +156,67 @@ def get_ui_controls_js() -> str:
             selectAllToggle.select(".folder-checkbox")
                 .text(allSelected ? "☑" : "☐");
         }
+
+        // Test Controls Card
+        function updateTestControlsCard() {
+            const testToggle = d3.select("#test-toggle");
+            testToggle.select(".folder-checkbox")
+                .text(showTestDependencies ? "☑" : "☐");
+            testToggle.on("click", toggleTestDependencies);
+        }
+
+        // Highlighting Options Card
+        function updateHighlightingOptionsCard() {
+            // Reserved for future highlighting options
+            // Path highlighting moved to Layout Controls
+        }
+
+        // Advanced Filters Card
+        function updateAdvancedFiltersCard() {
+            // Updates advanced filter controls if they exist
+            if (typeof updateFilterLabels === 'function') {
+                updateFilterLabels();
+            }
+        }
+
+        // Legacy function - now calls the new system
+        function updateEnhancedControls() {
+            renderControlPanel();
+        }
         
         function updateEnhancedStats() {
             const visibleNodes = graphData.nodes.filter(n => shouldShowNode(n));
             const visibleEdges = graphData.edges.filter(e => shouldShowEdge(e));
             const testFiles = visibleNodes.filter(n => n.is_test).length;
             
+            // Calculate new metrics
+            const totalFiles = graphData.nodes.length;
+            const directories = Object.keys(graphData.subfolder_info).length;
+            
+            // Calculate average SLOC (total_lines)
+            const nodesWithSLOC = visibleNodes.filter(n => n.total_lines && n.total_lines > 0);
+            const avgSLOC = nodesWithSLOC.length > 0 
+                ? Math.round(nodesWithSLOC.reduce((sum, n) => sum + n.total_lines, 0) / nodesWithSLOC.length)
+                : 0;
+            
+            // Calculate average performance metric
+            const nodesWithPerf = visibleNodes.filter(n => n.performance_score !== undefined);
+            const avgPerformance = nodesWithPerf.length > 0 
+                ? (nodesWithPerf.reduce((sum, n) => sum + n.performance_score, 0) / nodesWithPerf.length * 100).toFixed(1)
+                : "0.0";
+            
+            // Calculate average file size (convert bytes to KB)
+            const nodesWithSize = visibleNodes.filter(n => n.size && n.size > 0);
+            const avgFileSize = nodesWithSize.length > 0 
+                ? (nodesWithSize.reduce((sum, n) => sum + n.size, 0) / nodesWithSize.length / 1024).toFixed(1)
+                : "0.0";
+            
             const stats = [
-                { value: graphData.nodes.length, label: "Total Files" },
-                { value: visibleNodes.length, label: "Visible Files" },
-                { value: graphData.edges.length, label: "Edges" },
-                { value: visibleEdges.length, label: "Visible Edges" },
-                { value: Object.keys(graphData.subfolder_info).length, label: "Directories" },
+                { value: avgSLOC, label: "Average SLOC" },
+                { value: `${avgPerformance}%`, label: "Average Performance" },
+                { value: `${avgFileSize} KB`, label: "Average File Size" },
+                { value: totalFiles, label: "Total Files" },
+                { value: directories, label: "Directories" },
                 { value: testFiles, label: "Test Files" }
             ];
             

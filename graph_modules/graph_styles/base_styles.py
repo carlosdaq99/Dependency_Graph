@@ -16,101 +16,90 @@ def get_base_styles_css() -> str:
     """
     return """
         :root {
-            /* Light theme variables (default) */
-            --bg-primary: #f8f9fa;
-            --bg-secondary: #ffffff;
-            --bg-container: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --text-primary: #333333;
-            --text-secondary: #666666;
-            --text-muted: #888888;
-            --border-color: #e9ecef;
-            --border-color-hover: #dee2e6;
-            --shadow-light: rgba(0,0,0,0.1);
-            --shadow-medium: rgba(0,0,0,0.2);
-            --shadow-heavy: rgba(0,0,0,0.3);
-            --accent-color: #ff6600;
-            --accent-color-hover: #e55a00;
-            --graph-bg: #ffffff;
-            --node-stroke: #333333;
-            --link-color: #666666;
-            --control-bg: #ffffff;
-            --control-border: #e9ecef;
-            --button-bg: #f8f9fa;
-            --button-hover: #e9ecef;
-            --input-bg: #ffffff;
-            --input-border: #ced4da;
-            
-            /* Color definitions */
-            --accent-color: #ff6600;       /* Orange for direct connections */
-            --path-color: #3b82f6;         /* Blue for path connections */
-            --text-primary: #24292f;       /* Main text color for light theme */
-            --text-secondary: #656d76;     /* Secondary text color */
-            --bg-primary: #ffffff;         /* Main background */
-            --bg-secondary: #f6f8fa;       /* Secondary background */
-            --bg-tertiary: #f6f8fa;        /* Cards, panels */
-            --border-color: #d0d7de;       /* General borders */
-            --hotspot-color: #ff4444;      /* Performance hotspot indicator */
-            
-            /* Unified transparency settings for dimmed elements */
-            --dimmed-opacity: 0.05;
-            --dimmed-link-opacity: 0.15;
-            --dimmed-text-opacity: 0.1;  /* Increased for better text visibility */
+            /* ===== Light Theme Variables (Default) ===== */
+            --bg-primary: #f8f9fa;           /* Main app background (body, graph area) */
+            --bg-secondary: #ffffff;         /* Secondary background (panels, cards) */
+            --bg-container: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Graph container background gradient */
+            --text-primary: #333333;         /* Primary text color (high contrast) */
+            --text-secondary: #666666;       /* Secondary text color (subheadings, less important info) */
+            --text-muted: #888888;           /* Muted text color (hints, disabled, less visible) */
+            --border-color: #e9ecef;         /* Standard border color for UI elements */
+            --border-color-hover: #dee2e6;   /* Border color on hover/focus */
+            --shadow-light: rgba(0,0,0,0.1); /* Light shadow for subtle elevation */
+            --shadow-medium: rgba(0,0,0,0.2);/* Medium shadow for modals, overlays */
+            --shadow-heavy: rgba(0,0,0,0.3); /* Heavy shadow for strong elevation */
+            --accent-color: #ff6600;         /* Accent color for buttons, highlights, direct connections */
+            --accent-color-hover: #e55a00;   /* Accent color on hover (buttons, links) */
+            --graph-bg: #ffffff;             /* Graph SVG background */
+            --node-stroke: #333333;          /* Node border color in graph */
+            --link-color: #666666;           /* Link/edge color in graph */
+            --control-bg: #ffffff;           /* Sidebar/control panel background */
+            --control-border: #e9ecef;       /* Sidebar/control panel border */
+            --button-bg: #f8f9fa;            /* Button background */
+            --button-hover: #e9ecef;         /* Button background on hover */
+            --input-bg: #ffffff;             /* Input field background */
+            --input-border: #ced4da;         /* Input field border */
+
+            /* ===== Graph/Connection Colors ===== */
+            --accent-color: #ff6600;         /* Direct connection edge color (orange) */
+            --path-color: #3b82f6;           /* Path connection edge color (blue) */
+            --mixed-edge-color: #3b82f6;     /* Mixed edge color (blue, for hybrid connections) */
+
+            /* ===== Text Colors ===== */
+            --text-primary: #24292f;         /* Main text color for light theme (body, headings) */
+            --text-secondary: #656d76;       /* Secondary text color (subheadings, meta info) */
+
+            /* ===== Background Colors ===== */
+            --bg-primary: #ffffff;           /* Main background for app body */
+            --bg-secondary: #f6f8fa;         /* Secondary background for panels/cards */
+            --bg-tertiary: #f6f8fa;          /* Tertiary background for cards/panels */
+
+            /* ===== Border & Hotspot Colors ===== */
+            --border-color: #d0d7de;         /* General border color for UI elements */
+            --hotspot-color: #ff4444;        /* Performance hotspot indicator (red) */
+
+            /* ===== Transparency for Dimmed Elements ===== */
+            --dimmed-opacity: 0.3;             /* Opacity for dimmed nodes/elements */
+            --dimmed-link-opacity: 0.1;        /* Opacity for dimmed links/edges */
+            --dimmed-text-opacity: 0.3;       /* Opacity for dimmed text (improved visibility) */
         }
 
         [data-theme="dark"] {
-            /* Professional Dark Theme - Modern & Clean */
-            
-            /* Primary background colors using sophisticated grays */
-            --bg-primary: #092748;          /* Deep charcoal for main background */
-            --bg-secondary: #98c3d8;        /* Slightly lighter for panels */
-            --bg-container: linear-gradient(135deg, #125566 0%, #2e7f91 100%);  /* Subtle professional gradient */
-            
-            /* Text colors with proper contrast hierarchy */
-            --text-primary: #000000;        /* Soft white for primary text - easier on eyes */
-            --text-secondary: #1c1c1e;      /* Muted gray for secondary text */
-            --text-muted: #50555b;          /* Subtle gray for less important text */
-            
-            /* Border and structural colors */
-            --border-color: #30363d;        /* Professional border gray */
-            --border-color-hover: #484f58;  /* Lighter on hover */
-            
-            /* Shadow system using deep blues instead of pure black */
-            --shadow-light: rgba(16, 22, 35, 0.3);   /* Subtle depth */
-            --shadow-medium: rgba(16, 22, 35, 0.5);  /* Medium depth */
-            --shadow-heavy: rgba(16, 22, 35, 0.7);   /* Strong depth */
-            
-            /* Accent colors - professional blue palette */
-            --accent-color: #58a6ff;        /* Modern blue accent */
-            --accent-color-hover: #79b8ff;  /* Lighter blue on hover */
-            
-            /* Graph-specific colors */
-            --graph-bg: #092748;           /* Consistent with main background */
-            --node-stroke: #58a6ff;        /* Blue stroke for better visibility */
-            --link-color: #dae0e8;         /* Muted gray for links */
-            
-            /* Color definitions */
-            --accent-color: #ff6600;       /* Orange for direct connections */
-            --path-color: #3b82f6;         /* Blue for path connections */
-            --text-primary: #f0f6fc;       /* Light text for dark theme */
-            --text-secondary: #7d8590;     /* Secondary text */
-            --bg-primary: #0d1117;         /* Main background */
-            --bg-secondary: #161b22;       /* Secondary background */
-            --bg-tertiary: #21262d;        /* Cards, panels */
-            --border-color: #30363d;       /* General borders */
-            --hotspot-color: #ff4444;      /* Performance hotspot indicator */
-            
-            /* Control panel styling */
-            --control-bg: #1d5b69;         /* Slightly different from main for distinction */
-            --control-border: #30363d;     /* Consistent border */
-            --button-bg: #6abfd5;          /* Button background */
-            --button-hover: #6abfd5;       /* Button hover state */
-            --input-bg: #85bfd2;           /* Input field background */
-            --input-border: #30363d;       /* Input field border */
-            
-            /* Unified transparency settings remain the same for dark theme */
-            --dimmed-opacity: 0.05;
-            --dimmed-link-opacity: 0.15;
-            --dimmed-text-opacity: 0.1;  /* Increased for better text visibility */
+            /* ===== Dark Theme Variables ===== */
+            --graph-bg: #092748;               /* Graph SVG background (matches main background) */
+            --node-stroke: #000000;            /* Node border color in graph */
+            --link-color: #dae0e8;             /* Link/edge color in graph (muted gray) */
+
+            /* ===== Graph/Connection Colors ===== */
+            --accent-color: #ff6600;           /* Direct connection edge color (orange) */
+            --path-color: #3b82f6;             /* Path connection edge color (blue) */
+            --mixed-edge-color: #3b82f6;     /* Mixed edge color (blue, for hybrid connections) */
+
+            /* ===== Text Colors  ===== */
+            --text-primary: #262a2f;           /* Main text color for dark theme (body, headings) */
+            --text-secondary: #0c0c0c;         /* Secondary text color (subheadings, meta info) */
+
+            /* ===== Background Colors ===== */
+            --input-bg: #85bfd2;               /* Control Panel background (dark mode) */
+            --bg-secondary: #d2f6f7c6;           /* Background for panels/cards (dark mode) */
+            --bg-primary: #272833;             /* Main background for app body (dark mode) */
+            --bg-tertiary: #e123c1;            /* Tertiary background for cards/panels (dark mode) */
+
+            /* ===== Border & Hotspot Colors ===== */
+            --border-color: #30363d;           /* General border color for UI elements (dark mode) */
+            --hotspot-color: #ffe23c;          /* Performance hotspot indicator (yellow) */
+
+            /* ===== Control Panel & Input Styling ===== */
+            --control-bg: #1d5b69;             /* Sidebar/control panel background (dark mode) */
+            --control-border: #292f29;         /* Sidebar/control panel border (dark mode) */
+            --button-bg: #6abfd5;              /* Button background (dark mode) */
+            --button-hover: #6abfd5;           /* Button background on hover (dark mode) */
+            --input-border: #b6e1e4;           /* Input field border (dark mode) */
+
+            /* ===== Transparency for Dimmed Elements ===== */
+            --dimmed-opacity: 0.3;             /* Opacity for dimmed nodes/elements */
+            --dimmed-link-opacity: 0.1;        /* Opacity for dimmed links/edges */
+            --dimmed-text-opacity: 0.3;       /* Opacity for dimmed text (improved visibility) */
         }
 
         body {

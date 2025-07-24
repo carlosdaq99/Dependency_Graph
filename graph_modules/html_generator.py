@@ -16,6 +16,248 @@ from .hierarchical_layout import get_hierarchical_layout_js
 from .force_directed_layout import get_force_directed_layout_js
 from .graph_controls import get_graph_controls_js
 
+# Configuration for control panel card order and properties
+CARD_ORDER_CONFIG = [
+    {
+        "id": "statistics",
+        "title": "📊 Statistics",
+        "container_id": "stats-content",
+        "type": "statistics",
+    },
+    {
+        "id": "layout_control",
+        "title": "🎛️ Layout Controls",
+        "container_id": "layout-toggle",
+        "type": "layout_controls",
+    },
+    {
+        "id": "directories",
+        "title": "📁 Directories",
+        "container_id": "folder-controls",
+        "type": "directories",
+    },
+    {
+        "id": "advanced_filters",
+        "title": "🔍 Advanced Filters",
+        "container_id": "advanced-filters",
+        "type": "advanced_filters",
+    },
+    {
+        "id": "test_controls",
+        "title": "🧪 Test Controls",
+        "container_id": "test-toggle",
+        "type": "test_controls",
+    },
+    {
+        "id": "highlighting_options",
+        "title": "🔗 Highlighting Options",
+        "container_id": "path-highlighting-toggle",
+        "type": "highlighting",
+    },
+    {
+        "id": "card_order_config",
+        "title": "⚙️ Panel Configuration",
+        "container_id": "card-order-config",
+        "type": "card_config",
+    },
+    {
+        "id": "controls",
+        "title": "🔧 Controls",
+        "container_id": "reset-controls",
+        "type": "controls",
+    },
+]
+
+
+def render_statistics_card() -> str:
+    """Render the statistics card HTML."""
+    return """
+            <div class="section">
+                <h3>📊 Statistics</h3>
+                <div id="stats-content" class="stats-grid"></div>
+            </div>"""
+
+
+def render_layout_controls_card() -> str:
+    """Render the layout controls card HTML with Show Complete Paths."""
+    return """
+            <div class="section">
+                <h3>🎛️ Layout Controls</h3>
+                <div class="layout-toggle" id="layout-toggle">
+                    <span class="layout-toggle-label">📐 Hierarchical</span>
+                    <div class="toggle-switch" id="toggle-switch">
+                        <div class="toggle-slider"></div>
+                    </div>
+                    <span class="layout-toggle-label">🌐 Force-Directed</span>
+                </div>
+                <div class="layout-mode-indicator" id="layout-indicator">
+                    Current: Hierarchical Layout
+                </div>
+                <div class="folder-item" id="path-highlighting-toggle" 
+                     role="checkbox" tabindex="0" style="margin-top: 15px;">
+                    <span class="folder-checkbox">☐</span>
+                    <span class="folder-label">Show Complete Paths</span>
+                </div>
+                <div style="font-size: 11px; color: var(--text-muted); 
+                           margin-top: 8px; padding: 0 12px;">
+                    When enabled, highlights all nodes reachable by following a 
+                    continuous path from the selected node (blue), while direct 
+                    connections remain orange.
+                </div>
+            </div>"""
+
+
+def render_directories_card() -> str:
+    """Render the directories card HTML."""
+    return """
+            <div class="section">
+                <h3>📁 Directories</h3>
+                <div class="folder-item" id="select-all-toggle" role="checkbox" 
+                     tabindex="0" style="border-bottom: 1px solid #e9ecef; 
+                     margin-bottom: 10px; padding-bottom: 8px; font-weight: bold;">
+                    <span class="folder-checkbox">☑</span>
+                    <span class="folder-label">Select All Directories</span>
+                </div>
+                <div id="folder-controls"></div>
+            </div>"""
+
+
+def render_advanced_filters_card(max_pred: int, max_succ: int, max_size: int) -> str:
+    """Render the advanced filters card HTML."""
+    return f"""
+            <div class="section">
+                <h3>🔍 Advanced Filters</h3>
+                <div style="margin-bottom: 15px;">
+                    <label for="predecessors-filter" class="filter-label">
+                        📥 Predecessors (incoming):
+                    </label>
+                    <div style="display: flex; gap: 10px; align-items: center; 
+                               margin-bottom: 5px;">
+                        <input type="range" id="predecessors-min-filter" min="0" 
+                               max="{max_pred}" value="0" style="width: 45%;">
+                        <span style="font-size: 12px;">to</span>
+                        <input type="range" id="predecessors-max-filter" min="0" 
+                               max="{max_pred}" value="{max_pred}" style="width: 45%;">
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-muted);">
+                        <span id="predecessors-filter-value">0 - {max_pred}</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="successors-filter" class="filter-label">
+                        📤 Successors (outgoing):
+                    </label>
+                    <div style="display: flex; gap: 10px; align-items: center; 
+                               margin-bottom: 5px;">
+                        <input type="range" id="successors-min-filter" min="0" 
+                               max="{max_succ}" value="0" style="width: 45%;">
+                        <span style="font-size: 12px;">to</span>
+                        <input type="range" id="successors-max-filter" min="0" 
+                               max="{max_succ}" value="{max_succ}" style="width: 45%;">
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-muted);">
+                        <span id="successors-filter-value">0 - {max_succ}</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="size-filter" class="filter-label">
+                        📄 File Size (KB):
+                    </label>
+                    <div style="display: flex; gap: 10px; align-items: center; 
+                               margin-bottom: 5px;">
+                        <input type="range" id="size-min-filter" min="0" 
+                               max="{max_size}" value="0" style="width: 45%;">
+                        <span style="font-size: 12px;">to</span>
+                        <input type="range" id="size-max-filter" min="0" 
+                               max="{max_size}" value="{max_size}" style="width: 45%;">
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-muted);">
+                        <span id="size-filter-value">0 - {max_size}</span> KB
+                    </div>
+                </div>
+            </div>"""
+
+
+def render_test_controls_card() -> str:
+    """Render the test controls card HTML."""
+    return """
+            <div class="section">
+                <h3>🧪 Test Controls</h3>
+                <div class="folder-item" id="test-toggle" role="checkbox" tabindex="0">
+                    <span class="folder-checkbox">☑</span>
+                    <span class="folder-label">Show Test Dependencies</span>
+                </div>
+            </div>"""
+
+
+def render_highlighting_options_card() -> str:
+    """Render the highlighting options card HTML (deprecated - moved to Layout Controls)."""
+    return """
+            <div class="section" style="display: none;">
+                <h3>🔗 Highlighting Options</h3>
+                <p style="font-size: 11px; color: var(--text-muted);">
+                    Highlighting options have been moved to Layout Controls.
+                </p>
+            </div>"""
+
+
+def render_card_order_config_card() -> str:
+    """Render the card order configuration card HTML."""
+    return """
+            <div class="section">
+                <h3>⚙️ Panel Configuration</h3>
+                <div style="font-size: 11px; color: var(--text-muted); 
+                           margin-bottom: 10px;">
+                    Configure the order of control panel cards:
+                </div>
+                <div id="card-order-config">
+                    <div style="font-size: 12px; color: var(--text-secondary);">
+                        Card reordering interface coming soon...
+                    </div>
+                </div>
+            </div>"""
+
+
+def render_controls_card() -> str:
+    """Render the controls card HTML."""
+    return """
+            <div class="section">
+                <h3>🔧 Controls</h3>
+                <button class="reset-button" onclick="resetAllFilters()">
+                    Reset All Filters
+                </button>
+            </div>"""
+
+
+def render_control_panel_cards(project_maximums: Dict[str, Any]) -> str:
+    """Render all control panel cards based on CARD_ORDER_CONFIG."""
+    max_pred = project_maximums["max_predecessors"]
+    max_succ = project_maximums["max_successors"]
+    max_size = project_maximums["max_size_kb"]
+
+    card_renderers = {
+        "statistics": render_statistics_card,
+        "layout_control": render_layout_controls_card,
+        "directories": render_directories_card,
+        "advanced_filters": lambda: render_advanced_filters_card(
+            max_pred, max_succ, max_size
+        ),
+        "test_controls": render_test_controls_card,
+        "highlighting_options": render_highlighting_options_card,
+        "card_order_config": render_card_order_config_card,
+        "controls": render_controls_card,
+    }
+
+    cards_html = ""
+    for card in CARD_ORDER_CONFIG:
+        card_id = card["id"]
+        if card_id in card_renderers:
+            cards_html += card_renderers[card_id]()
+
+    return cards_html
+
 
 def get_html_head() -> str:
     """
@@ -53,108 +295,13 @@ def get_html_body(project_maximums: Dict[str, int] = None) -> str:
             "max_size_kb": 100,
         }
 
-    max_pred = project_maximums["max_predecessors"]
-    max_succ = project_maximums["max_successors"]
-    max_size = project_maximums["max_size_kb"]
+    # Generate cards using the configurable system
+    cards_html = render_control_panel_cards(project_maximums)
+
     return """<body>
     <div class="container">
         <div class="controls">
-            <div class="section">
-                <h3>📊 Statistics</h3>
-                <div id="stats-content" class="stats-grid"></div>
-            </div>
-            
-            <div class="section">
-                <h3>🎛️ Layout Control</h3>
-                <div class="layout-toggle" id="layout-toggle">
-                    <span class="layout-toggle-label">📐 Hierarchical</span>
-                    <div class="toggle-switch" id="toggle-switch">
-                        <div class="toggle-slider"></div>
-                    </div>
-                    <span class="layout-toggle-label">🌐 Force-Directed</span>
-                </div>
-                <div class="layout-mode-indicator" id="layout-indicator">
-                    Current: Hierarchical Layout
-                </div>
-            </div>
-            
-            <div class="section">
-                <h3>📁 Directories</h3>
-                <div class="folder-item" id="select-all-toggle" role="checkbox" tabindex="0" style="border-bottom: 1px solid #e9ecef; margin-bottom: 10px; padding-bottom: 8px; font-weight: bold;">
-                    <span class="folder-checkbox">☑</span>
-                    <span class="folder-label">Select All Directories</span>
-                </div>
-                <div id="folder-controls"></div>
-            </div>
-            
-            <div class="section">
-                <h3>🔍 Advanced Filters</h3>
-                <div style="margin-bottom: 15px;">
-                    <label for="predecessors-filter" class="filter-label">
-                        📥 Predecessors (incoming):
-                    </label>
-                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 5px;">
-                        <input type="range" id="predecessors-min-filter" min="0" max="{max_pred}" value="0" style="width: 45%;">
-                        <span style="font-size: 12px;">to</span>
-                        <input type="range" id="predecessors-max-filter" min="0" max="{max_pred}" value="{max_pred}" style="width: 45%;">
-                    </div>
-                    <div class="filter-value">
-                        <span id="predecessors-filter-value">0 - {max_pred}</span> predecessors
-                    </div>
-                </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <label for="successors-filter" class="filter-label">
-                        📤 Successors (outgoing):
-                    </label>
-                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 5px;">
-                        <input type="range" id="successors-min-filter" min="0" max="{max_succ}" value="0" style="width: 45%;">
-                        <span style="font-size: 12px;">to</span>
-                        <input type="range" id="successors-max-filter" min="0" max="{max_succ}" value="{max_succ}" style="width: 45%;">
-                    </div>
-                    <div class="filter-value">
-                        <span id="successors-filter-value">0 - {max_succ}</span> successors
-                    </div>
-                </div>
-                
-                <div style="margin-bottom: 15px;">
-                    <label for="size-filter" class="filter-label">
-                        📄 File Size (KB):
-                    </label>
-                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 5px;">
-                        <input type="range" id="size-min-filter" min="0" max="{max_size}" value="0" style="width: 45%;">
-                        <span style="font-size: 12px;">to</span>
-                        <input type="range" id="size-max-filter" min="0" max="{max_size}" value="{max_size}" style="width: 45%;">
-                    </div>
-                    <div class="filter-value">
-                        <span id="size-filter-value">0 - {max_size}</span> KB
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h3>🧪 Test Controls</h3>
-                <div class="folder-item" id="test-toggle" role="checkbox" tabindex="0">
-                    <span class="folder-checkbox">☑</span>
-                    <span class="folder-label">Show Test Dependencies</span>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h3>🔗 Highlighting Options</h3>
-                <div class="folder-item" id="path-highlighting-toggle" role="checkbox" tabindex="0">
-                    <span class="folder-checkbox">☐</span>
-                    <span class="folder-label">Show Complete Paths</span>
-                </div>
-                <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px; padding: 0 12px;">
-                    When enabled, highlights all nodes reachable by following a continuous path from the selected node (blue), while direct connections remain orange.
-                </div>
-            </div>
-            
-            <div class="section">
-                <h3>🔧 Controls</h3>
-                <button class="reset-button" onclick="resetAllFilters()">Reset All Filters</button>
-            </div>
+{cards_html}
         </div>
         
         <div class="graph-container">
@@ -169,22 +316,24 @@ def get_html_body(project_maximums: Dict[str, int] = None) -> str:
 
     <script>
         // Enhanced graph data with complete directory inclusion
-        const graphData = {graph_data_json};
+        const graphData = {{graph_data_json}};
 
-        {visualization_js}
-        {hierarchical_layout_js}
-        {force_directed_layout_js}
-        {controls_js}
+        {{visualization_js}}
+        {{hierarchical_layout_js}}
+        {{force_directed_layout_js}}
+        {{controls_js}}
         
         // Initialize on load
-        document.addEventListener("DOMContentLoaded", function() {{
+        document.addEventListener("DOMContentLoaded", function() {{{{
             initializeTheme();
             initializeEnhancedVisualization();
             initializeControls();
-        }});
+        }}}});
     </script>
 </body>
-</html>"""
+</html>""".format(
+        cards_html=cards_html
+    )
 
 
 def calculate_project_maximums(graph_data: Dict[str, Any]) -> Dict[str, int]:

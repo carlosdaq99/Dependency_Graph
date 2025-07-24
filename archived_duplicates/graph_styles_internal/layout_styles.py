@@ -133,9 +133,11 @@ def get_layout_styles_css() -> str:
             opacity: 0.9;
         }
         
+        /* DISABLED - Consolidated to primary CSS file
         .link.dimmed {
             opacity: var(--dimmed-link-opacity);
         }
+        */
         
         .link.hidden {
             display: none;

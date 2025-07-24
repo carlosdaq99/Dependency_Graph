@@ -34,10 +34,7 @@ from pathlib import Path
 
 # USER CONFIGURABLE ROOT DIRECTORY
 # Change this path to analyze a different project:
-DEFAULT_ROOT_PATH = (
-    r"c:\Users\dea29431.RSKGAD\OneDrive - Rsk Group Limited\Documents\Geotech"
-    r"\AGS Section\Geo_Borehole_Sections_Render"
-)
+DEFAULT_ROOT_PATH = r"C:\Users\dea29431.RSKGAD\OneDrive - Rsk Group Limited\Documents\Geotech\AGS Section\Geo_Borehole_Sections_Render"
 
 # Fall back to current directory context (when run from dependency_graph/)
 from graph_modules import main
